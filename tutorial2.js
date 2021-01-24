@@ -4,7 +4,7 @@ function initMap() {
     const patchoguehouse = { lat: 40.77282767944372, lng: -73.01558827273769 };
     // The map, centered at old home
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 10,
+      zoom: 6,
       center: patchoguehouse,
     });
     // The marker, positioned at 264 North Ocean Ave. Patchogue NY
