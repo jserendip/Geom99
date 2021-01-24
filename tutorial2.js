@@ -12,7 +12,7 @@ function initMap() {
       position: patchoguehouse,
       map: map,
     });
-  }
+  
     // Create an array of alphabetical characters used to label the markers.
     const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     // Add some markers to the map.
