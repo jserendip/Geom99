@@ -1,7 +1,7 @@
 // Initialize and add the map
 function initMap() {
     // The location of my ancetral home in New York
-    const patchoguehouse = { lat: 40.77282767944372, lng: -73.01558827273769 };
+    const patchoguehouse = { lat: 45.442046, lng: -78.820583 };
     // The map, centered at old home
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 6,
@@ -32,12 +32,12 @@ function initMap() {
     });
   }
   const locations = [      
-    { lat: 40.75043120704643, lng: -73.00752451016817 },
-    { lat: 40.756347936794874, lng: -73.01679422464042 },
-    { lat: 40.74731008253978, lng: -73.02640726187092 },
-    { lat: 40.761145463908356, lng: -73.01227249429115 },
-    { lat: 40.76011339955494, lng: -73.01160730644708 },
-    { lat: 40.76189309106897, lng: -73.01345266627257 },
-    { lat: 40.776990109564196, lng: -73.0071119241431 },
+    { lat: 49.758123, lng: -92.65349 },
+    { lat: 48.17812017, lng: -90.22694426 },
+    { lat: 49.904122, lng: -93.469178 },
+    { lat: 49.068974, lng: -93.904116 },
+    { lat: 49.690468, lng: -86.902049 },
+    { lat: 49.973826, lng: -92.138543 },
+    { lat: 49.6816, lng: -94.2359 },
   ];
   
