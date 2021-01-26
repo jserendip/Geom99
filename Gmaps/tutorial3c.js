@@ -1,3 +1,5 @@
+let map;
+
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 2,
@@ -14,20 +16,14 @@ function initMap() {
 }
 
 function eqfeed_callback(results) {
-  var heatmapData = [];
+  const heatmapData = [];
 
-  for (var i = 0; i < results.features.length; i++) {
-    var coords = results.features[i].geometry.coordinates;
-    var latLng = new google.maps.LatLng(coords[1], coords[0]);
-    var magnitude = results.features[i].properties.mag;
-    var weightedLoc = {
-      location: latLng,
-      weight: Math.pow(2, magnitude)
-    };
-    heatmapData.push(weightedLoc);
-
+  for (let i = 0; i < results.features.length; i++) {
+    const coords = results.features[i].geometry.coordinates;
+    const latLng = new google.maps.LatLng(coords[1], coords[0]);
+    heatmapData.push(latLng);
   }
-  var heatmap = new google.maps.visualization.HeatmapLayer({
+  const heatmap = new google.maps.visualization.HeatmapLayer({
     data: heatmapData,
     dissipating: false,
     map: map,
