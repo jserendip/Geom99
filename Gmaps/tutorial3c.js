@@ -1,6 +1,6 @@
 
 
-function heatMap() {
+function initMap() {
     newheatmap = new google.maps.Map(document.getElementById("map"), {
       zoom: 2,
       center: { lat: 2.8, lng: -187.3 },
