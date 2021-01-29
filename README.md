@@ -24,6 +24,9 @@ Get started and be sure to enable keys for all the three environments. Then try 
 ### 1. JavaScript API (HTML Interactive Map):
 
 Create Create the Overview (hello world) example and host in GitHub: https://developers.google.com/maps/documentation/javascript/tutorial
+
+My "Hello World" Javascript API basic map: https://jserendip.github.io/Geom99/Gmaps/helloworld.html
+
 ### 2. Directions API (JSON Return)
 
 Create Follow the Get Started instructions for directions and form a URL to provide route directions in JSON: https://developers.google.com/maps/documentation/directions/start
