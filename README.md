@@ -8,3 +8,6 @@ Create Please complete the full exercise provided by Google. With the final map,
 https://www.google.com/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/
 
 Issues with embedding it using an iframe? Be sure you're using the "embed" link. See an example of the solution here: https://shawnmflemingc.github.io/geom99/mymapsiframe.html
+
+My Shark Sightings & Beaches map is found here: https://jserendip.github.io/Geom99/Gmaps/sharksighting.html
+
