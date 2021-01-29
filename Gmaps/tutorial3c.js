@@ -1,7 +1,7 @@
 
 
 function initMap() {
-    newheatmap = new google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"), {
       zoom: 2,
       center: { lat: 2.8, lng: -187.3 },
       mapTypeId: "terrain",
@@ -27,6 +27,6 @@ function initMap() {
     const heatmap = new google.maps.visualization.HeatmapLayer({
       data: heatmapData,
       dissipating: false,
-      map: newheatmap,
+      map: map,
     });
   }
