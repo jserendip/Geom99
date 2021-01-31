@@ -359,4 +359,4 @@ Create Get a places details URL working to return JSON: https://developers.googl
 
 Get the examples working and prove your understanding of each through tweaks or documentation. For example, try the examples in the documentation, then modify the map/urls to locations that YOU KNOW to demonstrate your understanding. Bonus Big bonus if you can find and repeat/demonstrate a bug or major issue!!!  
 
-Keep your results and host them in GitHub for the next practical lab. 
+#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/placesAPIJSON.html 
