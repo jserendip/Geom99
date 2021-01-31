@@ -384,7 +384,7 @@ Complete this tutorial using the provided key (AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf
 https://developers.google.com/maps/documentation/javascript/marker-clustering 
 Complete this tutorial and host it in your GitHub account. Use the Provincial Parks of Ontario (List of Ontario Provincial Parks) as the locations. Name it tutorial2.html
 
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial2.html 
+#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial2_markerclusters.html 
 
 # Create Tutorial 3: 
 https://developers.google.com/maps/documentation/javascript/earthquakes
