@@ -1,8 +1,8 @@
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,        
-    center: { lat: 37.759147895927704, lng: -122.44730171551433 },
+    zoom: 2,        
+    center: { lat: 2.8, lng: -187.3 },
     mapTypeId: "terrain",
   });
   // Create a <script> tag and set the USGS URL as the source.
