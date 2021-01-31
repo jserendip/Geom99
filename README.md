@@ -370,12 +370,15 @@ What is Typescript? See https://cloud.google.com/blog/products/maps-platform/goo
 Base Documentation: https://developers.google.com/maps/documentation/javascript/
 
 Be sure to understand the functions and methods you are using by looking them up in the API: https://developers.google.com/maps/documentation/javascript/reference/
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial1.html 
+
 
 
 # Create Tutorial 1: 
 https://developers.google.com/maps/documentation/javascript/adding-a-google-map
 Complete this tutorial using the provided key (AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE)--you do not need to do Step 3. Store your solution in your personal public GitHub account under a Gmaps folder. Modify the solution so the "Marker" is at the location of your last degree or diploma. Name it tutorial1.html.
+
+#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial1.html 
+
 
 # Create Tutorial 2: 
 https://developers.google.com/maps/documentation/javascript/marker-clustering 
