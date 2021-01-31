@@ -360,3 +360,31 @@ Create Get a places details URL working to return JSON: https://developers.googl
 Get the examples working and prove your understanding of each through tweaks or documentation. For example, try the examples in the documentation, then modify the map/urls to locations that YOU KNOW to demonstrate your understanding. Bonus Big bonus if you can find and repeat/demonstrate a bug or major issue!!!  
 
 #### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/placesAPIJSON.html 
+
+# Tutorials
+Complete all THREE tutorials listed. Store them in a Gmaps folder in your GitHub account. You do not need to enhance these beyond the specifications as noted. 
+
+Please Use JavaScript, Not Typescript, for all activities with Google Maps. 
+What is Typescript? See https://cloud.google.com/blog/products/maps-platform/google-maps-platform-javascript-api-and-typescript
+
+Base Documentation: https://developers.google.com/maps/documentation/javascript/
+
+Be sure to understand the functions and methods you are using by looking them up in the API: https://developers.google.com/maps/documentation/javascript/reference/
+#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial1.html 
+
+
+# Create Tutorial 1: 
+https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+Complete this tutorial using the provided key (AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE)--you do not need to do Step 3. Store your solution in your personal public GitHub account under a Gmaps folder. Modify the solution so the "Marker" is at the location of your last degree or diploma. Name it tutorial1.html.
+
+# Create Tutorial 2: 
+https://developers.google.com/maps/documentation/javascript/marker-clustering 
+Complete this tutorial and host it in your GitHub account. Use the Provincial Parks of Ontario (List of Ontario Provincial Parks) as the locations. Name it tutorial2.html
+
+# Create Tutorial 3: 
+https://developers.google.com/maps/documentation/javascript/earthquakes
+Complete this tutorial and host it in your GitHub account. Keep each step and host them in your GitHub account as Create tutorial3a.html (points), Createtutorial3b.html (circles) and Create tutorial3c.html (heatmap). 
+
+Bonus Interested in a different maps api tutorial? Get pre-approval and you can complete that in place of one or all of the three above!
+
+
