@@ -394,4 +394,4 @@ Bonus Interested in a different maps api tutorial? Get pre-approval and you can 
 
 #### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3a.html 
 #### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3b.html 
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial13c.html 
+#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3c.html 
