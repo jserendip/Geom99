@@ -5,17 +5,23 @@
     <title>Saint Michael's Line</title>
     
     <style>
-    nav {
+    #navbar {
         position: fixed;
-        left: 1100px;
-        width: 10%;
+        width: 100%;
+        margin-left: auto; 
+        margin-right: auto;
         text-align: center;
         background: #ccc;
-        padding: 6px;
+        padding: 0px, 10px, 0px, 10px;
+        
         }
 
-        a:link {
-        color:lightseagreen;
+    a {
+        padding: 5px 25px 5px 25px;
+    }
+
+    a:link {
+    color:lightseagreen;
     } 
 
     a:visited {
@@ -30,12 +36,9 @@
         color:blue;
     } 
 
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        }
-    body {
-      margin: 8px 40px;
+
+    #content, #home, #main, #sm, #smm, #msm, #ssm {
+      margin: 14px 40px;
     }
     p {
         font-family: "Times New Roman", Times, serif;
@@ -49,15 +52,17 @@
   <body>
     <header> 
         <!-- this navbar setup is taken from w3schools https://www.w3schools.com/html/html_layout.asp  -->
-        <nav>
-            <ul>
-              <li><a href="#home">Home</a></li>  
-              <li><a href="#sm">Skellig Michael</a></li>
-              <li><a href="#smm">St. Michael's Mount</a></li>
-              <li><a href="#msm">Mont St. Michel</a></li>
-              <li><a href="#ssm">Santuario di San Michele</a></li>
-            </ul>
-        </nav>    
+        <div id="navbar">
+            
+              <a href="#home">Home</a>  
+              <a href="#sm">Skellig Michael</a>
+              <a href="#smm">St. Michael's Mount</a>
+              <a href="#msm">Mont St. Michel</a>
+              <a href="#ssm">Santuario di San Michele</a>
+            
+        </div>
+    </header>     
+    <div id="content">       
     <div id="home">
     <h1>The Line of Saint Michael</h1>
     <p>Thought by some to be a mystical "ley line" that extends from Ireland through to Turkey<br>
@@ -69,8 +74,8 @@
     While making this story map I discovered that they LOOK very linear on a projected map, but the <br>
     actual coordinates fall under an arc, not in a direct line!<br>
     Click on any of the icons on the map for photos</p>
-    </header> 
-    <iframe src="https://www.google.ca/maps/d/u/0/embed?mid=1W5Kqmy1zWU9650vgtVgPo68QgiitmOFl&usp=sharing" width="1000" height="480"></iframe>
+    
+    <iframe id="main" src="https://www.google.ca/maps/d/u/0/embed?mid=1W5Kqmy1zWU9650vgtVgPo68QgiitmOFl&usp=sharing" width="1000" height="480"></iframe>
     </div> 
     <div id="sm">
     <h3>Skellig Michael</h3>
@@ -147,6 +152,7 @@
     &destination=Normandy+France">
     </iframe>
     </div>
+  </div>   
   </body>
 </html>
 
