@@ -395,3 +395,14 @@ Bonus Interested in a different maps api tutorial? Get pre-approval and you can 
 #### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3a.html 
 #### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3b.html 
 #### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3c.html 
+
+# Option 2:
+Create a webpage to tell a story using MyMaps and/or Google Embedded Maps
+
+    Create and publish a MyMaps to showcase a location of interest to you using one or more spatial layers using multiple records (a single point or line is not appropriate and does not meet the requirements). 
+    Use the Embedded Maps, StreetView, Places or and other Embedded map to add to the context of your story: https://developers.google.com/maps/documentation/embed/get-started
+
+Note: For Option 2 your "story" must contain no fewer than 3 maps on the single page and tell a story in the HTML document effectively to tie all maps together. 
+
+My Story Map for Option 2 is of the "Line of Saint Michael" in Europe:  https://jserendip.github.io/Geom99/Gmaps/stmichaelsline.html
+
