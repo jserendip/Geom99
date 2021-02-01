@@ -5,6 +5,22 @@
     <title>Saint Michael's Line</title>
     
     <style>
+    nav {
+        position: fixed;
+        left: 1100px;
+        width: 10%;
+        text-align: center;
+        background: #ccc;
+        padding: 6px;
+        }
+    nav:hover {
+        color:aquamarine;
+    }    
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        }
     body {
       margin: 8px 40px;
     }
@@ -18,6 +34,17 @@
     </style>
   </head>
   <body>
+    <header> 
+        <!-- this navbar setup is taken from w3schools https://www.w3schools.com/html/html_layout.asp  -->
+        <nav>
+            <ul>
+              <li><a href="#sm">Skellig Michael</a></li>
+              <li><a href="#smm">St. Michael's Mount</a></li>
+              <li><a href="#msm">Mont St. Michel</a></li>
+              <li><a href="#ssm">Santuario di San Michele</a></li>
+            </ul>
+        </nav>    
+     
     <h1>The Line of Saint Michael</h1>
     <p>Thought by some to be a mystical "ley line" that extends from Ireland through to Turkey<br>
     the "Line of Saint Michael" is a line along which numerous monasteries and sacred sites<br>
@@ -28,7 +55,9 @@
     While making this story map I discovered that they LOOK very linear on a projected map, but the <br>
     actual coordinates fall under an arc, not in a direct line!<br>
     Click on any of the icons on the map for photos</p>
+    </header> 
     <iframe src="https://www.google.ca/maps/d/u/0/embed?mid=1W5Kqmy1zWU9650vgtVgPo68QgiitmOFl&usp=sharing" width="1000" height="480"></iframe>
+    <div id="sm">
     <h3>Skellig Michael</h3>
     
     <p>
@@ -43,6 +72,8 @@
         &zoom=19
         &maptype=satellite">
     </iframe>
+    </div>
+    <div id="smm">
     <h3>Saint Michael's Mount</h3> 
     <p>
         Monastic buildings were built in the 12th century on this island<br>
@@ -56,11 +87,13 @@
         &zoom=17
         &maptype=satellite">
     </iframe>
+    </div>
+    <div id="msm">
     <h3>Mont Saint Michel</h3> 
     <p>
         Like Saint Michael's Mount in England, Mont St. Michel is built on a hill on a small island.<br>
         This monastery was supposedly built here at the direct instruction of the Archangel Michael<br>
-        in the year 708AD.
+        in the year 708AD  Included is a "streetview" from inside the chapel.
     </p> 
     <iframe width="600" height="450" frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCHgOOLup8NtVGC7x_CJDkQxvzxK-Bd20U
@@ -68,6 +101,7 @@
         &zoom=17
         &maptype=satellite">
     </iframe>
+    
     <iframe width="600" height="450" frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyCHgOOLup8NtVGC7x_CJDkQxvzxK-Bd20U
         &location=48.63584533308485, -1.5119439952716087
@@ -75,6 +109,8 @@
         &pitch=10
         &fov=35">
     </iframe>
+    </div>
+    <div id="ssm">
     <h3>Santuario di San Michele del Gargano</h3> 
     <p>
         Supposedly begun as a monastery around the year 490 when the Archangel Michael<br>
@@ -95,7 +131,7 @@
     &origin=Foggia+Italy
     &destination=Normandy+France">
     </iframe>
-    
+    </div>
   </body>
 </html>
 
