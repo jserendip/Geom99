@@ -10,6 +10,7 @@ Required Items
     Review You can access the developer site for free at https://developers.arcgis.com/. Depending on how you login (using an Organizational user account that is username-licensed or using a developer account which is API key/per use licensed) the website seems to change itself. The developers website dashboard (https://developers.arcgis.com/dashboard/) is not just documenting web components, and has desktop APIs and other software Esri creates. The developers site definitely focuses on Web because that's what most organizations are focused on. You can set a "default" API when first visiting this (which can be changed at anytime). For this course you can select the ArcGIS API for Javascript OR the ArcGIS REST API, which is this courses focus. 
 
     Bonus You can create your own "Developers" account, which will also generate a 1-person AGOL Organization for you allowing you to use it independently of the Fleming Organizational Account. As well, you can "keep" this developers account after leaving the program where your ArcGIS Online items in the Fleming site will be removed this summer. Log out of the Fleming organization and visit the https://developers.arcgis.com website to sign up for your own account using your personal email. 
+    
     ArcGIS Online Developers: Create a new empty layer
     Due Feb 15, 2021 3:00 PM
 
@@ -19,151 +20,12 @@ Required Items
 
     Create Use the Create Data / New Hosted Layer to generate an empty layer (often empty layers are called a schema) in ArcGIS Online's Data Store. Create a layer to store. Use the specifications from the Fall Geom65 tree collection database description (below) to provide a "framework" to create this new schema, or if you have your own idea get approval and you can create a layer to capture that. Once created, you can try adding data into this using a webmap with full editing controls to see how it works. Record the item ID URL for this hosted feature layer, and also find the REST URL and record that too (more on that in the next item). You can store these links in a webpage or MarkDown document on your GitHub for this weeks' activities. 
 
-    Spec
-    	
-
-    Information
-    	
-
-    Description
-
-    1
-    	
-
-    Units
-    	
-
-    All units collected are to be in Metric
-
-    2
-    	
-
-    Operator
-    	
-
-    Unique Identification of the individual collecting the data
-
-    3
-    	
-
-    Unique Identifier
-    	
-
-    Each tree and all related observation data must have a guaranteed unique identifier for the one tree.
-
-    4
-    	
-
-    Location
-    	
-
-    As accurate a point of the location in WGS84/EPSG:4326 X/Y
-
-    5
-    	
-
-    Accuracy
-    	
-
-    An estimation of the locations’ accuracy, in whole meters. Example: “4”
-
-    6
-    	
-
-    Class
-    	
-
-    Is it a Conifer or Deciduous tree
-
-    7
-    	
-
-    Species
-    	
-
-    Species as identified in the Ontario Tree Atlas (or unknown)
-
-    8
-    	
-
-    Native
-    	
-
-    Is the tree species recommended/native to Ontario
-
-    9
-    	
-
-    Health
-    	
-
-    A raking 1 through 6 of the trees health score, where 1 is No concerns, 3 is moderate concerns, and 5 is high priority concern and 6 is hazardous.
-
-    10
-    	
-
-    Deadwood
-    	
-
-    Percent % of deadwood in canopy
-
-    11
-    	
-
-    Height
-    	
-
-    Height (in whole Meters) of tree above ground. (Use good estimate)
-
-    12
-    	
-
-    Ground level
-    	
-
-    Height (in Meters to 1 decimal place) of forest floor
-
-    13
-    	
-
-    DBH
-    	
-
-    Diameter at breast height (@~1.4m measure around trunk, then Circumference / Pi
-
-    14
-    	
-
-    Flags
-    	
-
-    Any number of items from these possible flags
-        Removal recommended
-        Condition to be monitored
-        Clear branches near Structure(s)
-        Trimming dead/broken branches
-        Evidence of infestation
-        Physical damage evident
-        To be reviewed by certified arborist
-        Significant example of species (good/beautiful)
-
-     
-
-    15
-    	
-
-    Comments
-    	
-
-    Comments about the tree (optional)
-
-    16
-    	
-
-    Date/Time
-    	
-
-    The Date and Time of the observation with all items above recorded
+My Hosted Layer for Tree Survey ID URL: https://fleming.maps.arcgis.com/home/item.html?id=b8cf0fe569c7412fb342dd0c8e3b69f2
+                                REST URL:  https://services1.arcgis.com/pMeXRvgWClLJZr3s/arcgis/rest/services/tree_survey_layer/FeatureServer?token=b1v0069j_xbYQjnbfdJ_Y6LSNq6zhdIYtBMhiwPHVZwHMKUXxbsnYK-0jgngpwHzinZpBkMR0XLlW8UJle72pW6HkoA7UwvA6bi6DxCa805fU_OxpTM-Zr1tQDjhsgf2sXfUNrynjJYErTEradqcRI5rgO-cfOlLYijZa-IhcivLZEAABkaGUmFvn_vNxqrwuqUMCcd06sHQsWNylaOfomWnsB0Q9ASt9qOLvvnWC0FZZvpIKyNxfVGnuO3SZbaXHkCuYmMEQsOAb7NC_ytO489-mDjzmFriz0KUL7NKWJQ.
+                                
+              layer in a web map with data added URL: https://fleming.maps.arcgis.com/home/webmap/viewer.html?webmap=28448dffff69455783f11c3d61697492
+              
+              
 
     Bonus Compare this Developers experience to the template creation experience available in the main AGOL website: https://resource.esriuk.com/blog/2019-2-21-creating-arcgis-online-layers-from-scratch/
     Explore: Introduction to ArcGIS Online REST and Token Security
