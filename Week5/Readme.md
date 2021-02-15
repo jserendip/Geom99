@@ -86,13 +86,32 @@
 
     Tip: You can copy the code directly out of each section on the Esri Webpage and paste it into your Visual Studio Code, the same as was done with Google Maps JavaScript API. Then when you "push" it to your GitHub it will be created there!
 
+### My Submission for Tutorial 1: https://jserendip.github.io/Geom99/Week5/DisplayMapTutorial1.html
+
+
 ##    Create Complete one of the remaining tutorials, either "Display your location" or "Add a point, line, and polyline" and get it running in your GitHub. Both of these tutorials each take 10 minutes. 
 
+I chose to do several of the tutorials because they're interesting!
+### My versions:     Tutorial #2 Display Location:  https://jserendip.github.io/Geom99/Week5/DisplayLocationTutorial2.html
+###                  Tutorial #3 Point, Line, Polygon, Pop-up: https://jserendip.github.io/Geom99/Week5/PointLinePolygonTutorial3.html
+        my trial of Tutorial #4 toutes and Directions did not work - I moved on, but here is what I had: https://jserendip.github.io/Geom99/Week5/RouteandDirectionsTutorial4.html            you may notice it places begining and end points, but does not generate a route or directions
+   
+
+
 ##    Bonus Complete a third tutorial of your choice and host it in GitHub. Choose from any of the JavaScript tutorials available: https://developers.arcgis.com/javascript/latest/
+
+### Here is my version of Tutorial #5 Display Scene (not "Dsiplay" as the file name says):  https://jserendip.github.io/Geom99/Week5/DsiplaySceneTutorial5.html
+    
+
 
 ##    Create Once you have completed at least 2 of the tutorials, you can choose one of them OR any other tutorial on the developers site to enhance into something special for you. Make a copy of the original tutorial solution to preserve it! Modify the copy by (some ideas) changing out the data, location, basemap, and any other element you think would be unique. Be creative! Spend about 30-60 minutes enhancing this tutorial to make it your own original idea. (Bonus create something valentines themed, since February 14th is this weekend!) If you are not sure what to modify, review other tutorials to get ideas, or the JavaScript API reference itself: 
 
     https://developers.arcgis.com/javascript/latest/api-reference/
+
+###  My customized version is a simple page with 2 maps, one displaying point locations, and a 3D Scene of the area
+###     I wanted to show some of the first major clmibs I ever did, and they are all on this one mountain crest
+###      My URL:  https://jserendip.github.io/Geom99/Week5/CustomizedDeveloperSceneSite_AlbuquerqueNM.html
+
 
 Optional Items
 
@@ -104,3 +123,5 @@ Optional Items
     Be sure to use an email address not provided by the college to sign up. You MAY complete the activities in this weeks' practical lab within your own developer account, but must share each item with a long-life TOKEN or make it public to be accessible during marking. 
 
     https://developers.arcgis.com/sign-up/
+###  made account, but problems with functionality....
+
