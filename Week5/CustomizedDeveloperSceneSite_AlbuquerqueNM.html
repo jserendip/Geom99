@@ -36,7 +36,7 @@
         
         // First map with climing locations
         const map = new Map ({
-        basemap: "arcgis-navigation" // Basemap layer service for location finding
+        basemap: "arcgis-topographic" // Basemap layer service for location finding
         });
 
         const view = new MapView({
@@ -51,8 +51,8 @@
          
         const point = { //Create a point
         type: "point",
-        longitude: -106.47606753815053,
-        latitude: 35.207144040273256,
+        longitude: -106.454,
+        latitude: 35.2049,
         };
         const simpleMarkerSymbol = {
         type: "simple-marker",
@@ -65,7 +65,16 @@
 
         const popupTemplate = {
         title: "The Thumb",
-        content: "This was my first multipitch climb - 7 pitches of mostly 5.6"
+        content: "This was my first multipitch climb - 6 pitches of mostly 5.6"
+        mediaInfos: [{
+        "title": "",
+        "caption": "",
+        "type": "image",
+        "value": {
+          "sourceURL": "{link}",
+          "linkURL": "{link}"
+    }
+  }]
         }
 
         const pointGraphic = new Graphic({
