@@ -8,11 +8,15 @@
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
       <title>ArcGIS API for JavaScript Tutorials: Display a scene</title>
       <style>
-        html, body, #viewDiv {
+        html, body, #viewDiv, #viewDiv2 {
           padding: 0;
           margin: 0;
           height: 100%;
           width: 100%;
+          
+        }
+        h1, h3 {
+            text-align: center;
         }
       </style>
       <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
@@ -22,45 +26,34 @@
         require([
           "esri/config",
           "esri/Map",
-          "esri/views/SceneView",
+          "esri/views/MapView",
           "esri/Graphic",
           "esri/layers/GraphicsLayer"
         ], 
-        function(esriConfig, Map, SceneView, Graphic, GraphicLayer) {
+        function(esriConfig, Map, MapView, Graphic, GraphicsLayer) {
         esriConfig.apiKey = "AAPK58757e513e6849479d2a7f81659ab98b6Sz2Juc95td5mDOiEI7aeD-YoljIiNv1ePbdkx77sCyKbMAlMbTbJSBux1O3_kBq";
         
-        const map = new Map({
-        basemap: "arcgis-topographic", //Basemap layer service
-        ground: "world-elevation", //Elevation service
         
-        });
-         
-        const view = new SceneView({
-        container: "viewDiv",
-        map: map,
-        camera: {
-            position: {
-            x: -106.48166799063512,   //Longitude
-            y:  35.20724923511262, //Latitude
-            z: 3500 //Meters
-            },
-            heading: 90,
-            tilt: 75
-
-        }
+        // First map with climing locations
+        const map = new Map ({
+        basemap: "arcgis-navigation" // Basemap layer service for location finding
         });
 
-                 
+        const view = new MapView({
+          container: "viewDiv",
+          map: map,
+          center: [-106.48166799063512, 35.20724923511262], // Longitude, latitude
+          zoom: 12, // Zoom level
+        });
+
         const graphicsLayer = new GraphicsLayer();
         map.add(graphicsLayer);
-
+         
         const point = { //Create a point
         type: "point",
-        longitude: -106.47546672332462,
-        latitude: 35.207284300028796,
-        z: 4000,
+        longitude: -106.47606753815053,
+        latitude: 35.207144040273256,
         };
-
         const simpleMarkerSymbol = {
         type: "simple-marker",
         color: [226, 119, 40],  // Orange
@@ -70,19 +63,64 @@
             }
         };
 
+        const popupTemplate = {
+        title: "The Thumb",
+        content: "This was my first multipitch climb - 7 pitches of mostly 5.6"
+        }
+
         const pointGraphic = new Graphic({
         geometry: point,
-        symbol: simpleMarkerSymbol
+        symbol: simpleMarkerSymbol,
+        popupTemplate: popupTemplate
         });
         graphicsLayer.add(pointGraphic);
+ 
 
         });
       </script>
- 
+      <script>
+        require([
+          "esri/config",
+          "esri/Map",
+          "esri/views/SceneView"
+        ], 
+        function(esriConfig, Map, SceneView) {
+        esriConfig.apiKey = "AAPK58757e513e6849479d2a7f81659ab98b6Sz2Juc95td5mDOiEI7aeD-YoljIiNv1ePbdkx77sCyKbMAlMbTbJSBux1O3_kBq";  
+        const map2 = new Map ({
+        basemap: "arcgis-topographic", //Basemap layer service
+        ground: "world-elevation", //Elevation service
+        
+        });
+
+        //second map - 3d scene
+        const view2 = new SceneView({
+        container: "viewDiv2",
+        map: map2,
+        camera: {
+            position: {
+            x: -106.48166799063512,   //Longitude
+            y:  35.20724923511262, //Latitude
+            z: 3500 //Meters
+            },
+            heading: 90,
+            tilt: 75
+        }
+        });
+        
+        });
+      </script>
     
     </head>
     <body>
-      <div id="viewDiv"></div>
+        <div id="home">
+            <h1>Great Climbing in Albuquerque's Sandia Mountain Range</h1>
+            
+        </div> 
+      <div id="viewDiv"></div>  
+      <div>
+        <h3>3d Scene of Sandia Crest</h3>
+      </div> 
+      <div id="viewDiv2"></div>
     </body>
     </html>
 
