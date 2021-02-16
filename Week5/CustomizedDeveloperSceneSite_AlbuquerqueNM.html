@@ -64,9 +64,26 @@
         };
 
         const popupTemplate = {
-        title: "The Thumb",  
-        content: "This was my firt ever multipitch climb!  6 Pitches of 5.6",
+          title: "<b>The Thumb</b>",
+             
+              content: [{
+            type: "fields",
+            fieldInfos: [{
+              fieldName: "URL",
+              visible: false,
+              label: "https://jserendip.github.io/Geom99/Week5/thethumb.jpg"
+            }]
+          },{
+            type: "media",
+            mediaInfos: [{
+              title: "My first Multi-pitch climb",
+              type: "image",
+              value: {sourceURL: 'https://jserendip.github.io/Geom99/Week5/thethumb.jpg'}
+            }]
+          }]
         };
+        
+        
 
         const pointGraphic = new Graphic({
         geometry: point1,
@@ -92,8 +109,8 @@
 
         const popupTemplate2 = {
         title: "The Tombstone",  
-        content: "We meant to do the easy 2 pitch 5.5 route,\
-        but got off route and it got very scary!  My partner got a finger stuck in the rock and we thought he might lose it!",
+        content:  "We meant to do the easy 2 pitch 5.5 route,\
+        but got off route and it got very scary!  My partner got a finger stuck in the rock and we thought he might lose it!"
         };
 
         const pointGraphic2 = new Graphic({
