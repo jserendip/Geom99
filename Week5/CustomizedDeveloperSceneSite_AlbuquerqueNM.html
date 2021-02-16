@@ -151,9 +151,24 @@
         };
 
         const popupTemplate3 = {
-        title: "The Pulpit",  
-        content: "This is meant to be an easy route and so the first where I did most of the lead,\
-        but we came to a tough spot and my partner did it, but then his rope came off!  He was not properly tied in!",
+          title: "<b>The Pulpit</b>",
+             
+              content: [{
+            type: "fields",
+            fieldInfos: [{
+              fieldName: "URL",
+              visible: false,
+              label: "https://jserendip.github.io/Geom99/Week5/pulpit.jpg"
+            }]
+          },{
+            type: "media",
+            mediaInfos: [{
+              title: "This was my first trad lead.  First few pitches were super easy, but came to some tough stuff, \
+              and it ends with a 120 foot freer rappel to escape!",
+              type: "image",
+              value: {sourceURL: 'https://jserendip.github.io/Geom99/Week5/pulpit.jpg'}
+            }]
+          }]
         };
 
         const pointGraphic3 = new Graphic({
