@@ -108,9 +108,23 @@
         };
 
         const popupTemplate2 = {
-        title: "The Tombstone",  
-        content:  "We meant to do the easy 2 pitch 5.5 route,\
-        but got off route and it got very scary!  My partner got a finger stuck in the rock and we thought he might lose it!"
+          title: "<b>The Tombstone</b>",
+             
+              content: [{
+            type: "fields",
+            fieldInfos: [{
+              fieldName: "URL",
+              visible: false,
+              label: "https://jserendip.github.io/Geom99/Week5/tombstone.jpg"
+            }]
+          },{
+            type: "media",
+            mediaInfos: [{
+              title: "My buddy got his finger caught in a crack on this one - scary!",
+              type: "image",
+              value: {sourceURL: 'https://jserendip.github.io/Geom99/Week5/tombstone.jpg'}
+            }]
+          }]
         };
 
         const pointGraphic2 = new Graphic({
