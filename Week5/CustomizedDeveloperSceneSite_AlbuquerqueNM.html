@@ -49,7 +49,7 @@
         const graphicsLayer = new GraphicsLayer();
         map.add(graphicsLayer);
          
-        const point = { //Create a point
+        const point1 = { //Create a point for The Thumb
         type: "point",
         longitude: -106.454,
         latitude: 35.2049,
@@ -64,28 +64,78 @@
         };
 
         const popupTemplate = {
-        title: "The Thumb",
-        content: "This was my first multipitch climb - 6 pitches of mostly 5.6"
-        mediaInfos: [{
-        "title": "",
-        "caption": "",
-        "type": "image",
-        "value": {
-          "sourceURL": "https://jserendip.github.io/Geom99/Week5/thethumb.jpg",
-          "linkURL": "https://jserendip.github.io/Geom99/Week5/thethumb.jpg"
-    }
-  }]
-        }
+        title: "The Thumb",  
+        content: "This was my firt ever multipitch climb!  6 Pitches of 5.6",
+        };
 
         const pointGraphic = new Graphic({
-        geometry: point,
+        geometry: point1,
         symbol: simpleMarkerSymbol,
         popupTemplate: popupTemplate
         });
         graphicsLayer.add(pointGraphic);
  
 
+        const point2 = { //Create a point for The Tombstone
+        type: "point",
+        longitude: -106.456,
+        latitude: 35.222,
+        };
+        const simpleMarkerSymbol2 = {
+        type: "simple-marker",
+        color: [226, 119, 40],  // Orange
+        outline: {
+            color: [255, 255, 255], // White
+            width: 1
+            }
+        };
+
+        const popupTemplate2 = {
+        title: "The Tombstone",  
+        content: "We meant to do the easy 2 pitch 5.5 route,\
+        but got off route and it got very scary!  My partner got a finger stuck in the rock and we thought he might lose it!",
+        };
+
+        const pointGraphic2 = new Graphic({
+        geometry: point2,
+        symbol: simpleMarkerSymbol2,
+        popupTemplate: popupTemplate2
         });
+        graphicsLayer.add(pointGraphic2);
+ 
+
+
+        const point3 = { //Create a point for The Pulpit
+        type: "point",
+        longitude: -106.459,
+        latitude: 35.211,
+        };
+        const simpleMarkerSymbol3 = {
+        type: "simple-marker",
+        color: [226, 119, 40],  // Orange
+        outline: {
+            color: [255, 255, 255], // White
+            width: 1
+            }
+        };
+
+        const popupTemplate3 = {
+        title: "The Pulpit",  
+        content: "This is meant to be an easy route and so the first where I did most of the lead,\
+        but we came to a tough spot and my partner did it, but then his rope came off!  He was not properly tied in!",
+        };
+
+        const pointGraphic3 = new Graphic({
+        geometry: point3,
+        symbol: simpleMarkerSymbol3,
+        popupTemplate: popupTemplate3
+        });
+        graphicsLayer.add(pointGraphic3);
+
+
+
+        }); 
+
       </script>
       <script>
         require([
