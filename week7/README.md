@@ -47,6 +47,8 @@
     Using ArcGIS Server Map Services
     Due Mar 1, 2021 11:00 AM
 
+### My ArcGIS Online map service from Published CanadaV2 map on Luna ArcGIS Server:   https://fleming.maps.arcgis.com/home/webmap/viewer.html?webmap=6d32749e786747a9bf7e63d19ff27f30    
+
     Now that your map is created and hosted on ArcGIS Online, explore the REST endpoints for both from Luna and the item in ArcGIS Online. They're identical and using the same data, stored on the Luna server. The entire class has done this and you are all using the same single SHP file on the server (assuming you did the first activity correctly!). But you can actually override the map cartography (somewhat).
 
 ##    Create 
