@@ -1,10 +1,11 @@
 
-Required Items
+# Required Items
 
-    Publish the Canada Service to the Luna server (During your lab)
-    Due Feb 26, 2021 12:00 PM
+##     Publish the Canada Service to the Luna server (During your lab)
+##    Due Feb 26, 2021 12:00 PM
 
-    Create Publishing data using ArcGIS Pro to ArcGIS Server is many steps. Using ArcGIS Pro, this exercise will provide you guidance to understand how to register data, upload, and start a map service on the Fleming's ArcGIS Server.  A video guides you through the general process to complete these tasks here, but be sure to use the settings detailed below when carrying out this task: https://www.youtube.com/watch?v=nIRlZN9ECwY 
+    Create
+     Publishing data using ArcGIS Pro to ArcGIS Server is many steps. Using ArcGIS Pro, this exercise will provide you guidance to understand how to register data, upload, and start a map service on the Fleming's ArcGIS Server.  A video guides you through the general process to complete these tasks here, but be sure to use the settings detailed below when carrying out this task: https://www.youtube.com/watch?v=nIRlZN9ECwY 
 
     TL;DR: Server name is luna.flemingcollege.ca/arcgis Username is ADROOT\flemingusername. Password is same as your email. Name your published service FlemingusernameCanada
     Detailed Instructions (including a data download link):
@@ -32,13 +33,15 @@ Required Items
 
     By referencing the Layer specifically, we can add just that one layer and not the entire map service. With ArcGIS Server map services, a "bundle" of layers and their cartography can be published at once, similar to how an MXD. Typically this "bundle" is a theme of data used in an application as operational layers, or perhaps as a source to create a tiled/cashed base map. As an added bonus of flexibility, a single layer can be targeted, which does sometimes allow for unique functionality. 
 
-    Create To add the service to a map in ArcGIS Online, you must first make an ArcGIS Online Item to reference the service. Because this service is also secured (requires a log in), you must provide credentials to add it. Use your own login information and save it with the service so that everyone in ArcGIS Online can see it. 
+##    Create 
+    To add the service to a map in ArcGIS Online, you must first make an ArcGIS Online Item to reference the service. Because this service is also secured (requires a log in), you must provide credentials to add it. Use your own login information and save it with the service so that everyone in ArcGIS Online can see it. 
 
     https://doc.arcgis.com/en/arcgis-online/reference/arcgis-server-services.htm
 
     Once the item referencing your map service layer URL, open the NEW MAP VIEWER in ArcGIS Online and you can add that item to the map. Because we referenced the ArcGIS Map Service Layer specifically that is all we get added here and the tags, description and other metadata need to be specified for it.  If referencing the map service itself (remove the 0 from the map service URL) we would get the metadata automatically populating from the service itself. 
 
-    Review Did your map projection change? What is the initial map extent? What properties from your originally published map carry forward? Explore the service from this context in ArcGIS Online and what can be done in the new ArcGIS Online beta map viewer to enhance your map. Change (override) its cartography to display the best way possible for a map showing Canada and its provinces. If you need to re-publish the service in ArcMap/ArcGIS Pro to make the improvements do that.
+##    Review 
+    Did your map projection change? What is the initial map extent? What properties from your originally published map carry forward? Explore the service from this context in ArcGIS Online and what can be done in the new ArcGIS Online beta map viewer to enhance your map. Change (override) its cartography to display the best way possible for a map showing Canada and its provinces. If you need to re-publish the service in ArcMap/ArcGIS Pro to make the improvements do that.
 
     Submit This map service, its item and ArcGIS Online WebMap (using the Beta) will be submitted as part of your next practical lab. This practical lab activity is the focus for the required pass to earn the credit in this course.
     Using ArcGIS Server Map Services
@@ -46,11 +49,13 @@ Required Items
 
     Now that your map is created and hosted on ArcGIS Online, explore the REST endpoints for both from Luna and the item in ArcGIS Online. They're identical and using the same data, stored on the Luna server. The entire class has done this and you are all using the same single SHP file on the server (assuming you did the first activity correctly!). But you can actually override the map cartography (somewhat).
 
-    Create Add the REST endpoint URL for the map service into ArcGIS Pro directly. You can also try browsing the "items" in ArcGIS Online and add the item that way. One references directly to Luna, the other goes to ArcGIS Online and accesses it through there. See what cartographic options are available in ArcGIS pro for each and save a newly-styled map in the Project for review in the next practical lab. 
+##    Create 
+    Add the REST endpoint URL for the map service into ArcGIS Pro directly. You can also try browsing the "items" in ArcGIS Online and add the item that way. One references directly to Luna, the other goes to ArcGIS Online and accesses it through there. See what cartographic options are available in ArcGIS pro for each and save a newly-styled map in the Project for review in the next practical lab. 
     Create an application using your Luna Canada Map Service
     Due Mar 1, 2021 11:00 AM
 
-    Create Find a new example (one you have not completed in week 3) from the JavaScript API (https://developers.arcgis.com/labs/?product=javascript&topic=any ), Esri's GitHub (http://esri.github.io/ ), Android, Python (or another source, with approval, not listed) that would allow you to create a user-friendly "wrapper" for your new Canada Map service to educate elementary children (7-10 years of age) on the Provinces of Canada. Create and host that modified JavaScript example on your GitHub site so that anyone logged into the Fleming ArcGIS Online Organization can open your application.
+ ##   Create 
+    Find a new example (one you have not completed in week 3) from the JavaScript API (https://developers.arcgis.com/labs/?product=javascript&topic=any ), Esri's GitHub (http://esri.github.io/ ), Android, Python (or another source, with approval, not listed) that would allow you to create a user-friendly "wrapper" for your new Canada Map service to educate elementary children (7-10 years of age) on the Provinces of Canada. Create and host that modified JavaScript example on your GitHub site so that anyone logged into the Fleming ArcGIS Online Organization can open your application.
 
     You can download and configure ArcGIS Online templates for this item too! See how to configure them here: https://youtu.be/sJf-XxjxPPE (older video, but still applies)
 
@@ -58,7 +63,8 @@ Required Items
     Read: Feature Service (FeatureServer) vs Map Service (MapServer)
     Due Mar 1, 2021 11:00 AM
 
-    Read There are many types of services that can be created using ArcGIS Server. But two are the most important to understand, and can be challenging to differentiate at first. Here is a brief summary to understand the major differences. Both types make available attribute data, but the major difference is with the mapping data and how the client displays it. 
+    Read 
+    There are many types of services that can be created using ArcGIS Server. But two are the most important to understand, and can be challenging to differentiate at first. Here is a brief summary to understand the major differences. Both types make available attribute data, but the major difference is with the mapping data and how the client displays it. 
     Feature Service (vector geometries are streamed):
 
         Feature services allow you to serve features over the Internet and provide the symbology to use when displaying the features. Clients can execute queries to get features and perform edits that can be applied to the server. Feature services provide templates that can be used for an enhanced editing experience on the client. Data from relationship classes and nonspatial tables can also be queried and edited using feature services. The client usually "converts" the geometries into a "map", since this type of service streams vectors. 
@@ -69,7 +75,7 @@ Required Items
 
         Read more at: https://enterprise.arcgis.com/en/server/latest/publish-services/windows/what-is-a-feature-service-.htm
 
-    Map Service (a picture of the data are created and sent):
+##    Map Service (a picture of the data are created and sent):
 
         The map service is the way that you make maps available to the web using ArcGIS. You'll make the map in ArcMap, then publish the map as a service to your ArcGIS Server site. Internet or intranet users can then use the map service in web applications, ArcGIS for Desktop, ArcGIS Online, and other client applications. A Map Service always has cartography and usually is a bundle of layers, not just one by itself. Map services are not editable and are query/display-only because the client is looking at a "picture" of the data, and not the data itself. 
 
@@ -80,7 +86,8 @@ Required Items
     Share a web map to ArcGIS Online
     Due Mar 1, 2021 11:00 AM
 
-    Create Using the Esri Documentation, now share the same web map published to Luna in ArcGIS Pro to your Account in Fleming's ArcGIS Online Organization. Name your Web Map "Canada Geom99 WebMap" and add at minimum the tag "Geom99". Make the map public and note what was created when you performed this, whether the data are copied and how the data appear in your item(s). 
+##    Create 
+    Using the Esri Documentation, now share the same web map published to Luna in ArcGIS Pro to your Account in Fleming's ArcGIS Online Organization. Name your Web Map "Canada Geom99 WebMap" and add at minimum the tag "Geom99". Make the map public and note what was created when you performed this, whether the data are copied and how the data appear in your item(s). 
 
     https://pro.arcgis.com/en/pro-app/latest/help/sharing/overview/share-a-web-map.htm
 
