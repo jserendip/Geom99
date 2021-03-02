@@ -38,12 +38,141 @@
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.18/"></script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    <html>
+<head>
+  <meta name="description" content="DevLab: Configure a popup">
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>ArcGIS API for JavaScript Tutorials: Display a pop-up (JSAPI)</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.18/"></script>
+</head>
 
+<script>
+        require(["esri/config", "esri/Map", "esri/views/MapView", "esri/layers/MapImageLayer"], function (esriConfig,Map,MapView,MapImageLayer) {
+            esriConfig.apiKey = "AAPKf023507eba2343d2b295864cd96c7908JFoy1tmtS59165ok3v79p-LWNuPq-7axghF2LguQ1BjaEoGfBHt7c1gJCZeFZR9Z";
+            const map = new Map({
+                basemap: "arcgis-topographic"
+            });
+            const view = new MapView({
+                map: map,
+                center: [-96.39781131846817, 70.911027297633105],
+                zoom: 2,
+                container: "viewDiv"
+            });
+            var provinceRenderer = {
+                type: "unique-value", 
+                field: "PRENAME",
+                defaultSymbol: {
+                    type: "simple-fill", 
+                    style: "none",
+                    outline: {
+                    width: 1,
+                    color: "white"
+                    }
+                },
+                label: "Province Polygons"
+            };
 
-<div class="embed-container">
-<iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Jserendip_Canada_from ArcGISServer_Layer_0" src="//fleming.maps.arcgis.com/apps/Embed/index.html?webmap=104b01a38dc1446ea0949966978fe50d&extent=-158.3015,26.056,-28.487,71.0238&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=dark"></iframe>
-</div>
-
+        var canada = new MapImageLayer({
+            portalItem: {
+                id: "104b01a38dc1446ea0949966978fe50d"
+            },
+            sublayers: [
+                {
+                id: 0,
+                renderer: provinceRenderer,
+                opacity: 0.8,
+                // labelling sublayers for a Map Service: https://developers.arcgis.com/javascript/latest/sample-code/layers-mapimagelayer-dynamic-labels/
+                labelingInfo: [
+                    {
+                    labelExpression: "[PRENAME]",
+                    labelPlacement: "always-horizontal",
+                    symbol: {
+                        type: "text", // autocasts as new TextSymbol()
+                        color: [255, 255, 255, 0.85],
+                        haloColor: "white",
+                        haloSize: 1,
+                        font: {
+                        size: 12,
+                        weight: "bold"
+                        }
+                    },
+                    minScale: 100000000,
+                    maxScale: 9250000
+                    }
+                ],
+                popupTemplate: {
+                
+                // template taken from: https://developers.arcgis.com/javascript/latest/sample-code/layers-dynamicdatalayer-table-join/
+                title: "{PRENAME}",
+                content: [
+                  {
+                    type: "fields",
+                    fieldInfos: [
+                      {
+                        fieldName: "PREABBR",
+                        label: "English Abbreviation",
+                        visible: true,
+                      },
+                      {
+                        fieldName: "PRFABBR",
+                        label: "French Abbreviation",
+                        visible: true,
+                      },
+                    ]
+                  }
+                ]
+              }
+            }
+            ]
+            });
+            map.add(canada);
+        });
+    </script>
 
 
   </head>
