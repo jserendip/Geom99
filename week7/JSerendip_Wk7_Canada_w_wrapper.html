@@ -39,22 +39,6 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
     <script src="https://js.arcgis.com/4.18/"></script>
 
-    <script>
-      require(["esri/config","esri/Map", "esri/views/MapView"], function (esriConfig,Map, MapView) {
-        esriConfig.apiKey = "AAPK58757e513e6849479d2a7f81659ab98b6Sz2Juc95td5mDOiEI7aeD-YoljIiNv1ePbdkx77sCyKbMAlMbTbJSBux1O3_kBq";
-
-        const map = new Map({
-          basemap: "arcgis-topographic" // Basemap layer service
-        });
-        const view = new MapView({
-          map: map,
-          center: [-118.805, 34.027], // Longitude, latitude
-          zoom: 13, // Zoom level
-          container: "viewDiv" // Div element
-        });
-      });
-    </script>
-
 
 <div class="embed-container">
 <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Jserendip_Canada_from ArcGISServer_Layer_0" src="//fleming.maps.arcgis.com/apps/Embed/index.html?webmap=6d32749e786747a9bf7e63d19ff27f30&extent=-158.3015,26.056,-28.487,71.0238&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=dark"></iframe>
