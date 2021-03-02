@@ -65,6 +65,9 @@
     Read: Feature Service (FeatureServer) vs Map Service (MapServer)
     Due Mar 1, 2021 11:00 AM
 
+## My educational application of Canada web map   https://jserendip.github.io/Geom99/week7/JSerendip_Wk7_Canada_w_wrapper.html
+    
+
     Read 
     There are many types of services that can be created using ArcGIS Server. But two are the most important to understand, and can be challenging to differentiate at first. Here is a brief summary to understand the major differences. Both types make available attribute data, but the major difference is with the mapping data and how the client displays it. 
     Feature Service (vector geometries are streamed):
