@@ -18,6 +18,22 @@
         height: 100%;
         width: 100%;
       }
+      .embed-container {
+          position: relative; 
+          padding-bottom: 80%; 
+          height: 0; 
+          max-width: 100%;} 
+
+      .embed-container iframe, .embed-container object, .embed-container iframe{
+          position: absolute; 
+          top: 0; left: 0; 
+          width: 100%; 
+          height: 100%;} 
+      small{
+            position: absolute; 
+            z-index: 40; 
+            bottom: 0; 
+            margin-bottom: -15px;}
     </style>
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
@@ -38,6 +54,11 @@
         });
       });
     </script>
+
+
+<div class="embed-container">
+<iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Jserendip_Canada_from ArcGISServer_Layer_0" src="//fleming.maps.arcgis.com/apps/Embed/index.html?webmap=6d32749e786747a9bf7e63d19ff27f30&extent=-158.3015,26.056,-28.487,71.0238&zoom=true&previewImage=false&scale=true&legendlayers=true&disable_scroll=true&theme=dark"></iframe>
+</div>
 
 
 
