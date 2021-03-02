@@ -51,33 +51,11 @@
                 label: "Province Polygons"
             };
 
-        var canada = new MapImageLayer({
-            url: "https://luna.flemingcollege.ca/arcgis/rest/services/Geom99lab2/JSerendiCanadaV2/MapServer/"
-            });
-            sublayers: [
-                {
-                id: 0,
-                renderer: provinceRenderer,
-                opacity: 0.8,
-                // labelling sublayers for a Map Service: https://developers.arcgis.com/javascript/latest/sample-code/layers-mapimagelayer-dynamic-labels/
-                labelingInfo: [
-                    {
-                    labelExpression: "[PRENAME]",
-                    labelPlacement: "always-horizontal",
-                    symbol: {
-                        type: "text", // autocasts as new TextSymbol()
-                        color: [255, 255, 255, 0.85],
-                        haloColor: "white",
-                        haloSize: 1,
-                        font: {
-                        size: 12,
-                        weight: "bold"
-                        }
-                    },
-                    minScale: 100000000,
-                    maxScale: 9250000
-                    }
-                ],
+            var featureLayer = new FeatureLayer({
+                url:
+                    "https://fleming.maps.arcgis.com/home/webmap/viewer.html?webmap=104b01a38dc1446ea0949966978fe50d"
+                });
+                map.add(featureLayer);
                 popupTemplate: {
                 
                 // template taken from: https://developers.arcgis.com/javascript/latest/sample-code/layers-dynamicdatalayer-table-join/
@@ -103,7 +81,7 @@
             }
             ]
             });
-            map.add(canada);
+
         });
     </script>
 
