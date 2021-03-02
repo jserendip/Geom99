@@ -17,28 +17,37 @@
   <script>
     require([
       "esri/config",
-      "esri/Map",
       "esri/WebMap",
       "esri/views/MapView",
       "esri/widgets/ScaleBar",
       "esri/widgets/Legend"
+
     ], function(esriConfig, WebMap, MapView, ScaleBar, Legend) {
 
-    esriConfig.apiKey = "AAPK58757e513e6849479d2a7f81659ab98b6Sz2Juc95td5mDOiEI7aeD-YoljIiNv1ePbdkx77sCyKbMAlMbTbJSBux1O3_kBq";
+      esriConfig.apiKey = "AAPK58757e513e6849479d2a7f81659ab98b6Sz2Juc95td5mDOiEI7aeD-YoljIiNv1ePbdkx77sCyKbMAlMbTbJSBux1O3_kBq";
 
       const webmap = new WebMap({
         portalItem: {
-          id: "41281c51f9de45edaf1c8ed44bb10e30"
+          id: "104b01a38dc1446ea0949966978fe50d"
         }
       });
 
       const view = new MapView({
         container: "viewDiv",
-
-
         map: webmap
 
       });
+
+      const scalebar = new ScaleBar({
+        view: view
+      });
+
+      view.ui.add(scalebar, "bottom-left");
+
+      const legend = new Legend ({
+        view: view
+      });
+      view.ui.add(legend, "top-right");
 
   });
   </script>

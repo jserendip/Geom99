@@ -1,43 +1,70 @@
-<!-- Canada map created in ArcGIS Server, modified in ArcGIS Pro and arcgis online map viewer  -->
-<!-- Created by: James Serendip   March 1, 2021  for Fleming College  -->
-
-<!DOCTYPE html>
- 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>Learn Canada's Provinces!</title>
-    <style>
-    .embed-container {
-        position: relative; 
-        padding-bottom: 80%; 
-        height: 0; 
-        max-width: 100%;} 
-        
-    .embed-container iframe,
-     .embed-container object,
-      .embed-container iframe{
-          position: absolute; 
-          top: 0; 
-          left: 0; 
-          width: 100%; 
-          height: 100%;
-          } 
-          small{
-              position: absolute; 
-              z-index: 40; 
-              bottom: 0; 
-              margin-bottom: -15px;
-              }
-    </style>
-
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Learn the Provinces and Territories of Canada!</title>
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    h1, p {
+        text-align: center;
+    }
+  </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
   <script src="https://js.arcgis.com/4.18/"></script>
-</head>
 
-  <body>
-    <div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Jserendip_Canada_featurelayer" src="//fleming.maps.arcgis.com/apps/Embed/index.html?webmap=104b01a38dc1446ea0949966978fe50d&extent=-154.3464,46.9046,-24.5319,77.9293&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light"></iframe>
-    </div>
-  </body>
+  <script>
+    require([
+      "esri/config",
+      "esri/WebMap",
+      "esri/views/MapView",
+      "esri/widgets/ScaleBar",
+      "esri/widgets/Legend",
+      "esri/widgets/AreaMeasurement2D"
+
+    ], function(esriConfig, WebMap, MapView, ScaleBar, Legend, AreaMeasurement2D) {
+
+      esriConfig.apiKey = "AAPK58757e513e6849479d2a7f81659ab98b6Sz2Juc95td5mDOiEI7aeD-YoljIiNv1ePbdkx77sCyKbMAlMbTbJSBux1O3_kBq";
+
+      const webmap = new WebMap({
+        portalItem: {
+          id: "104b01a38dc1446ea0949966978fe50d"
+        }
+      });
+
+      const view = new MapView({
+        container: "viewDiv",
+        map: webmap
+
+      });
+
+      const scalebar = new ScaleBar({
+        view: view
+      });
+
+      view.ui.add(scalebar, "bottom-left");
+
+
+
+    // To add the AreaMeasurement2D widget to my map
+    var measurementWidget = new AreaMeasurement2D({
+    view: view
+    });
+    view.ui.add(measurementWidget, "bottom-right");
+
+  });
+  </script>
+</head>
+<body>
+<h1>Let's Look at Canada's Provinces and Territories!</h1>
+<p>Use the measurement tool (at the bottom right) to explore the distance and areas of our Provinces and Territories!</p>
+<p>Tasks:  1) How far is it from the Southern border of Manitoba to the Northern border?</p>
+<p>        2) What is the area of Saskatchewan?</p>
+<p>        3) Challenge question!!!  What is the length of our total border with USA? (hint: don't forget Alaska!)</p>
+  <div id="viewDiv"></div>
+</body>
 </html>
