@@ -1,3 +1,8 @@
+# James Serendip Development Log
+## Week 9-10
+    
+
+
 
 # Esri Configurables
 
