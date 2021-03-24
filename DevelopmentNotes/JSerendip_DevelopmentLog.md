@@ -15,33 +15,35 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
 
     WebApp Builder is the original "configurable" ArcGIS Online solution and is a little dated. It includes built-in tools so you can create 2D and 3D web apps for your workflows and your brand. It's user-friendly, flexible, and full of GIS functionality. Developers can build custom widgets and themes to extend ArcGIS Web AppBuilder. Display and analyze your data on any device without writing code. There is also a developer edition allowing customization by deploying the libraries on your own server or portal.   
 
-    Marketing page: https://www.esri.com/en-us/arcgis/products/arcgis-web-appbuilder/overview
+Marketing page: https://www.esri.com/en-us/arcgis/products/arcgis-web-appbuilder/overview
 
-    Documentation tutorials and examples: https://doc.arcgis.com/en/web-appbuilder/
+Documentation tutorials and examples: https://doc.arcgis.com/en/web-appbuilder/
 
-    https://www.youtube.com/watch?v=nIYE-_Nhdec (2017 UC Presentation)
-    ArcGIS Dashboards
+https://www.youtube.com/watch?v=nIYE-_Nhdec (2017 UC Presentation)
+    
+##    ArcGIS Dashboards
 
-##    ArcGIS Dashboards present location data using interactive data visualizations on a single screen. Typically Dashboards are meant for managing or communicating information rolled-up into graphs and simple maps. The famous COVID-19 dashboard really "put this on the map". Tailor dashboards to your audiences, giving them the ability to slice the data to get the answers they need. Dashboards are essential information products, like maps and apps, providing a critical component to your geospatial infrastructure.
+    ArcGIS Dashboards present location data using interactive data visualizations on a single screen. Typically Dashboards are meant for managing or communicating information rolled-up into graphs and simple maps. The famous COVID-19 dashboard really "put this on the map". Tailor dashboards to your audiences, giving them the ability to slice the data to get the answers they need. Dashboards are essential information products, like maps and apps, providing a critical component to your geospatial infrastructure.
 
-    https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/resources
+https://www.esri.com/en-us/arcgis/products/arcgis-dashboards/resources
 
-    https://www.youtube.com/watch?v=zrxYWzSvJ6E (2018 UC Presentation)
+https://www.youtube.com/watch?v=zrxYWzSvJ6E (2018 UC Presentation)
 
-    Esri StoryMaps
+##    Esri StoryMaps
 
     Create inspiring, immersive stories by combining text, interactive maps, and other multimedia content.
 
-    https://storymaps.arcgis.com/
+https://storymaps.arcgis.com/
 
-    https://www.youtube.com/watch?v=t_oFnIIJA-A (40 minute 2020 presentation)
-    Focused Configurable Apps
+https://www.youtube.com/watch?v=t_oFnIIJA-A (40 minute 2020 presentation)
+    
+##    Focused Configurable Apps
 
     Configurable apps help developers deploy maps and tools to their end-users, inside highly customized web applications fast, sometimes within minutes.
 
-    https://github.com/topics/4x-configurable-app
+https://github.com/topics/4x-configurable-app
 
-    https://www.youtube.com/watch?v=PQjvUVwqic8 (4 minute UC presentation)
+https://www.youtube.com/watch?v=PQjvUVwqic8 (4 minute UC presentation)
 
 # Open Source solutions.
 
@@ -49,41 +51,47 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
 
     Leaflet is a lightweight open-source JavaScript library for mobile-friendly interactive maps. It does not need any licenses to run and is simple to use, small (38k library download to your browser), and really cool!  You can learn more about Leaflet here:
 
-    https://leafletjs.com/index.html
+https://leafletjs.com/index.html
 
     Esri created a "port" to allow leaflet to use ArcGIS Server services too. This is a much easier/simpler alternative to the Esri provided javascript APIs. 
 
-    https://esri.github.io/esri-leaflet/
+https://esri.github.io/esri-leaflet/
 
     Review these items as they may be useful for your collaborative project and are great alternatives to Google and Mapbox's pay-per-map model, and the very expensive Esri suite of software. 
     Geoserver
 
 ##    Geoserver allows you to host and share GIS data over the web as OGC types, like WMS, WFS and WMTS. It is a good ArcGIS Server replacement (middle tier). Combined with a database like PostgresSQL/PostGIS and an API JavaScript library like Leaflet, it can be a complete solution comparable to ArcGIS Enterprise. 
 
-    http://geoserver.org/
+http://geoserver.org/
 
-    https://youtu.be/7bbq3gWEXI8
+https://youtu.be/7bbq3gWEXI8
 
-    https://youtu.be/Gjfb4cF_j8k
+https://youtu.be/Gjfb4cF_j8k
 
-    https://youtu.be/ym1b2NDDAQY
+https://youtu.be/ym1b2NDDAQY
 
-    https://youtu.be/8lhwczAjCec
-    OpenStreetMap
+https://youtu.be/8lhwczAjCec
+    
+##    OpenStreetMap
 
-##    OpenStreetMap is a collaborative project to create a free editable map of the world. The geodata underlying the map is considered the primary output of the project.
+    OpenStreetMap is a collaborative project to create a free editable map of the world. The geodata underlying the map is considered the primary output of the project.
 
-    https://www.openstreetmap.org/#map=3/71.34/-96.82
-    qField for Android Devices
+https://www.openstreetmap.org/#map=3/71.34/-96.82
+    
+    
+##    qField for Android Devices
 
-##    QField allows you to efficiently work on your GIS data outdoor. QField is based on QGIS. It is not a rebuild of QGIS it really does use QGIS libraries. The rendering engine is exactly the same as in QGIS for desktop and your project will therefore look exactly the same on your mobile device as it does on your computer.
+    QField allows you to efficiently work on your GIS data outdoor. QField is based on QGIS. It is not a rebuild of QGIS it really does use QGIS libraries. The rendering engine is exactly the same as in QGIS for desktop and your project will therefore look exactly the same on your mobile device as it does on your computer.
 
-    https://qfield.org/
+    
+https://qfield.org/
+
+
 ##    KoboToolbox
 
     KoboToolbox uses much of the same components as Survey123, except the data are stored in an internal MongoDB (NoSQL Database). There is a hosted (SaaS) version, as well you can deploy your own KoboToolbox to environments in a Docker container (like a VM, but simpler). This is an excellent alternative to Survey 123 and is truly open source. 
 
-    https://www.kobotoolbox.org/
+https://www.kobotoolbox.org/
 
 # Mapbox API
 
@@ -94,7 +102,7 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
     This item will contribute to a bonus in Practical Lab 4. 
     Mapbox: Create a Mapbox account
 
-    Create your own Mapbox account: https://account.mapbox.com/auth/signup/
+Create your own Mapbox account: https://account.mapbox.com/auth/signup/
 
     Familiarize yourself with how to get your own access token. 
     Mapbox: Modify these Demos using your ArcGIS Server map service
@@ -103,11 +111,11 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
 
     This first example "hacks" Mapbox into thinking a map return is WMS. In reality, this does not need the WMS capabilities enabled on your service, because the URL returns only a PNG image and mimics the functionality of WMS. Modify this example to use your published map service. Notice how your configured cartography is maintained in this example. That is because this exports just a "picture" of your map and displays it in the coordinate system used by Mapbox. 
 
-    https://shawnmflemingc.github.io/mapboxdemo.html
+https://shawnmflemingc.github.io/mapboxdemo.html
 
     The next example uses the GeoJSON export capability in a layer query request from ArcGIS Server and the ability for Mapbox to read and use GeoJSON as a layer. Because GeoJSON exports only the geometries, there is no cartography from your map service used--instead Mapbox has its own "painting" defined. First, modify the ArcGIS Server URL to use your own published Canada map service on Luna. Next, modify the query of the ArcGIS Service URL to return one or more provinces. Be sure to modify the example, as just showing "Ontario" as the example does will not be acceptable for the last checklist. 
 
-    https://shawnmflemingc.github.io/mapboxgeojson.html
+https://shawnmflemingc.github.io/mapboxgeojson.html
 
     These modified examples are great ways to get your own map service on your own GitHub or HTDOCS account running. Feel free to give it a try!
 
@@ -117,7 +125,7 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
 
     This example does that:
 
-    https://shawnmflemingc.github.io/mapboxagsprojection.html
+https://shawnmflemingc.github.io/mapboxagsprojection.html
 
     NOTE: The portion {bbox-epsg-3857} MUST be exactly this in the URL/do not URL encode it. This is to specify the bounding box for each image request. This will be "replaced" by Mapbox whenever it makes a request, using the actual coordinates for the requested bounding box. 
 
@@ -144,7 +152,7 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
 
     Watch this marketing overview of the product. It gives some ideas of what is possible, but is more high-level than what you'll need to figure how to make it work. Frequently when having a company try and sell you something they provide non-technical flashy content like this, which makes making technical decisions challenging. To get a true feel for this product by asking you to configure some items using step by step instructions (optional item). 
 
-    Marketing Demo: https://www.youtube.com/watch?v=nLtWz9iP3H0 (generic and has a lot of "buzz words" but still frames product scope)
+Marketing Demo: https://www.youtube.com/watch?v=nLtWz9iP3H0 (generic and has a lot of "buzz words" but still frames product scope)
 
     Note: Many municipal opportunities value Geocortex Essentials and 5 experience. To help you, I've negotiated an exclusive relationship with Vertigis to make the product available to you. 
 
@@ -159,13 +167,13 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
 
     This demo site for Geocortex Essentials was created to show new users what could be completed. It is built with help from the Los Angeles government, and uses a version of their data. Give it a try and explore! 
 
-    https://gedemo.geocortex.com/Html5Viewer/index.html?viewer=Government
+https://gedemo.geocortex.com/Html5Viewer/index.html?viewer=Government
 
     This product, as configured, uses Map Services published in ArcGIS Server alone and does not need the full stack deployment of ArcGIS Enterprise to work. 
 
     Here is a list of Geocortex 5 demo sites:
 
-    https://gedemo.geocortex.com/GeocortexDemos/
+https://gedemo.geocortex.com/GeocortexDemos/
 
     Geocortex 5 "versions" are integrated into ArcGIS Online and their configuration is stored in items. It requires ArcGIS Online or an ArcGIS Enterprise implementation to use it, and thus has been slow in its adoption. 
 
@@ -179,6 +187,6 @@ https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
 
     Rolta's OnPoint product is another Canadian-born product that many municipalities have worked on. Formally Orion Technologies out of Richmond Hill, the company was bought by Rolta in the mid-2000's and since then has focused on large multinational companies with OnPoint, A few municipal clients still use it, including Kitchener Ontario, which was OnPoint's first client!
 
-    City of Kitchener: https://map.kitchener.ca/OnPointExt/WebPages/Disclaimer.aspx?ReturnUrl=%2fOnPointExt%2fWebPages%2fLanding%2fPublic.aspx
+City of Kitchener: https://map.kitchener.ca/OnPointExt/WebPages/Disclaimer.aspx?ReturnUrl=%2fOnPointExt%2fWebPages%2fLanding%2fPublic.aspx
 
     This is another configurable "add on" to ArcGIS Server. Understanding solution possibilities is important for your final exam, which this contributes. 
