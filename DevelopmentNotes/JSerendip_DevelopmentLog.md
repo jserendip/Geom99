@@ -5,14 +5,15 @@
 
     ArcGIS Experience Builder is relatively new (about 1 year) and allows you to configure web apps without writing code. Build mapcentric or nonmapcentric apps and display them on a fixed or scrolling screen, on single or multiple pages. Perform a drag-and-drop operation to choose the tools you need from a rich set of widgets, design your own templates, and interact with your 2D and 3D content—all within one app. With ArcGIS Experience Builder, your web apps look great and run seamlessly on mobile devices.
 
-    https://www.esri.com/en-us/arcgis/products/arcgis-experience-builder/overview
+https://www.esri.com/en-us/arcgis/products/arcgis-experience-builder/overview
 
-    https://www.youtube.com/watch?v=pNrsd5naN7U (short into)
+https://www.youtube.com/watch?v=pNrsd5naN7U (short into)
 
-    https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
-    WebApp Builder
+https://www.youtube.com/watch?v=Vu6_pBa7zis (how to)
+    
+##    WebApp Builder
 
-##    WebApp Builder is the original "configurable" ArcGIS Online solution and is a little dated. It includes built-in tools so you can create 2D and 3D web apps for your workflows and your brand. It's user-friendly, flexible, and full of GIS functionality. Developers can build custom widgets and themes to extend ArcGIS Web AppBuilder. Display and analyze your data on any device without writing code. There is also a developer edition allowing customization by deploying the libraries on your own server or portal.   
+    WebApp Builder is the original "configurable" ArcGIS Online solution and is a little dated. It includes built-in tools so you can create 2D and 3D web apps for your workflows and your brand. It's user-friendly, flexible, and full of GIS functionality. Developers can build custom widgets and themes to extend ArcGIS Web AppBuilder. Display and analyze your data on any device without writing code. There is also a developer edition allowing customization by deploying the libraries on your own server or portal.   
 
     Marketing page: https://www.esri.com/en-us/arcgis/products/arcgis-web-appbuilder/overview
 
