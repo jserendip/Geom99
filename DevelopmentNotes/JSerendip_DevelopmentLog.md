@@ -1,6 +1,19 @@
 # James Serendip Development Log
+tracking research and development time spent toward Geom99 Final Project for Team "Web Delta"
 ## Week 9-10
-    
+    This week's focus has been on the week 9 checklist - to go through various tools and options for 
+    developing web maps, web apps, and custom web solutions applicable to Geom 99 final project for team 
+    Web Delta, and also research for possible solutions for final collaborative project (Team Happy Puppies)
+
+## Week 10-11
+
+## Week 11-12
+
+## Week 12-13
+
+## Week 13-14
+
+## Week 14-15
 
 
 
