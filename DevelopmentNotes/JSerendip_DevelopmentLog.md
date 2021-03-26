@@ -45,6 +45,10 @@ tracking research and development time spent toward Geom99 Final Project for Tea
             **Time Spent:**  1 hours
             **Resource Links:**  https://account.mapbox.com/
 
+
+## Week 10-11
+    Working through Experience Builder to determine if we want to use it for our project or switch to StoryMaps
+    because of the difficulties and bugs we ahve encountered so far with Experience Builder.
 ####    March 22 - Working through week 9 checklist
             Create and Explore Mapbox account
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
@@ -52,20 +56,50 @@ tracking research and development time spent toward Geom99 Final Project for Tea
             **Outcomes:**  account created and some exploration
             **ToDOs:**     create and embed a map using mapbox
             **Time Spent:**  0.5 hours
-            **Resource Links:**  
+            **Resource Links:**  https://account.mapbox.com/
 
-## Week 10-11
-    Working through Experience Builder to determine if we want to use it for our project or switch to StoryMaps
-    because of the difficulties and bugs we ahve encountered so far with Experience Builder.
+####    March 23 - Working through week 9 checklist
+            Create and Explore Leaflet account
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  very API-ish
+            **Outcomes:**  account created and some exploration
+            **ToDOs:**     create and embed a map using leaflet - need more exploration of this one
+            **Time Spent:**  0.25 hours
+            **Resource Links:**  https://esri.github.io/esri-leaflet/
+
+####    March 24 - Working through week 9 checklist
+            Research and experiment with ESRI WebAppBuilder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  working this after working with experience builder I see that this is maybe slightly easier, but way less customizable
+            **Outcomes:**   Created WebApp example called Test
+            **ToDOs:**     
+            **Time Spent:**  0.5 hours
+            **Resource Links:**  https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=06ae26881a784cdfb79f61fa51c12216
+
+####    March 25 - Working through week 9 checklist
+            Web Delta/Happy Puppies team meeting to discuss use of Experience Builder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  there are worrisome bugs in Experience Builder, but also useful functionality, so it's a trade off
+            **Outcomes:**   we are all excited to try Experience Builder, but nervous that it may be more difficult that it's worth for us
+            **ToDOs:**     create and embed a map using leaflet - need more exploration of this one
+            **Time Spent:**  0.25 hours
+            **Resource Links:** 
 
 ####    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
             Experience Builder Insights:  
-            1) Use Different views to be able to show correct initial view of map
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  very API-ish
+            **Outcomes:**              1) Use Different views to be able to show correct initial view of map
             since the Feature Views widget will cause a selection to zoom the map initially regardless of
             initial map settings.  This works great and helps me understand different ways to use the views feature!
             2) The text for the Views menu is NOT EDITABLE in the widget properties!  Only in the page menu!
             3) The Filter widget is amazing.  Added a View 2 for visuaoizing Stream Order using a series of filters
             for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very cool!
+            **ToDOs:**     create and embed a map using leaflet - need more exploration of this one
+            **Time Spent:**  0.25 hours
+            **Resource Links:**  https://esri.github.io/esri-leaflet/
+                        
+
 
 
 ## Week 11-12
