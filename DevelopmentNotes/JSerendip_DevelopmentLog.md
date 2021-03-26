@@ -97,7 +97,7 @@ tracking research and development time spent toward Geom99 Final Project for Tea
             for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very cool!
             **ToDOs:**     create and embed a map using leaflet - need more exploration of this one
             **Time Spent:**  0.25 hours
-            **Resource Links:**  https://esri.github.io/esri-leaflet/
+            **Resource Links:**  <https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/>
                         
 
 
