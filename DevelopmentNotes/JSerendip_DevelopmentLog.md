@@ -6,6 +6,17 @@ tracking research and development time spent toward Geom99 Final Project for Tea
     Web Delta, and also research for possible solutions for final collaborative project (Team Happy Puppies)
 
 ## Week 10-11
+    Working through Experience Builder to examine its efficacy for our project
+
+###    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
+            Experience Builder Insights:  
+            1) Use Different views to be able to show correct initial view of map
+            since the Feature Views widget will cause a selection to zoom the map initially regardless of
+            initial map settings.  This works great and helps me understand different ways to use the views feature!
+            2) The text for the Views menu is NOT EDITABLE in the widget properties!  Only in the page menu!
+            3) The Filter widget is amazing.  Added a View 2 for visuaoizing Stream Order using a series of filters
+            for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very cool!
+
 
 ## Week 11-12
 
