@@ -88,18 +88,17 @@ tracking research and development time spent toward Geom99 Final Project for Tea
 ####    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
             Experience Builder Insights:  
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  very API-ish
-            **Outcomes:**              1) Use Different views to be able to show correct initial view of map
-            since the Feature Views widget will cause a selection to zoom the map initially regardless of
-            initial map settings.  This works great and helps me understand different ways to use the views feature!
-            2) The text for the Views menu is NOT EDITABLE in the widget properties!  Only in the page menu!
-            3) The Filter widget is amazing.  Added a View 2 for visuaoizing Stream Order using a series of filters
-            for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very cool!
-            **ToDOs:**     create and embed a map using leaflet - need more exploration of this one
-            **Time Spent:**  0.25 hours
-            **Resource Links:**  
-            [Experience Builder](<https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/>)
-                        
+**Insights:**  very API-ish
+**Outcomes:**              1) Use Different views to be able to show correct initial view of map
+since the Feature Views widget will cause a selection to zoom the map initially regardless of
+initial map settings.  This works great and helps me understand different ways to use the views feature!
+2) The text for the Views menu is NOT EDITABLE in the widget properties!  Only in the page menu!
+3) The Filter widget is amazing.  Added a View 2 for visuaoizing Stream Order using a series of filters
+for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very cool!
+**ToDOs:**     create and embed a map using leaflet - need more exploration of this one
+**Time Spent:**  0.25 hours
+**Resource Links:**  <https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/>
+                      
 
 
 
