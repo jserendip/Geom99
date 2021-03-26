@@ -5,8 +5,41 @@ tracking research and development time spent toward Geom99 Final Project for Tea
     developing web maps, web apps, and custom web solutions applicable to Geom 99 final project for team 
     Web Delta, and also research for possible solutions for final collaborative project (Team Happy Puppies)
 
+####    March 15 - Working through checklists
+            Set up DuckDNS, SSL Certification
+            Watch video on managing Portal from Map/Pro
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  SSL Cert works but still shows security warnings (because of changing Duck DNS I guess)
+                            ArcGIS Pro ONLY ALLOWS 1 PORTAL open at a time!  Change in Project tab
+            **Outcomes:**  Completed DNS, certifaction, video
+            **ToDOs:**     runArcGIS Server on EC2
+            **Time Spent:**  1.25 hours
+            **Resource Links:**  https://www.duckdns.org/domains  video: https://youtu.be/KItDcnDQce0
+
+####    March 16 - Working through week 9 checklist
+            Watched 2 videos on Experience Builder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  like dashboard on steroids
+                            There is a LOT of back-end programming on this!
+            **Outcomes:**  Completed videos
+            **ToDOs:**     
+            **Time Spent:**  1.25 hours
+            **Resource Links:**  video 1: https://www.youtube.com/watch?v=pNrsd5naN7U  video2: https://www.youtube.com/watch?v=Vu6_pBa7zis
+
+####    March 18 - Working through week 9 checklist
+            Experimenting with Experience Builder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  some widget functionality not what it seems!
+                           Everything set through Properties panel on right, but some settings are tricky
+            **Outcomes:**  Created very basic experience builder template
+            **ToDOs:**     Test and expand capabilities of Experience Builder example
+            **Time Spent:**  1 hours
+            **Resource Links:**  https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/
+
+
 ## Week 10-11
-    Working through Experience Builder to examine its efficacy for our project
+    Working through Experience Builder to determine if we want to use it for our project or switch to StoryMaps
+    because of the difficulties and bugs we ahve encountered so far with Experience Builder.
 
 ####    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
             Experience Builder Insights:  
