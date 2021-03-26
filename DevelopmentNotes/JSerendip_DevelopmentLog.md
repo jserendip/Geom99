@@ -9,41 +9,41 @@ tracking research and development time spent toward Geom99 Final Project for Tea
             Set up DuckDNS, SSL Certification
             Watch video on managing Portal from Map/Pro
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  SSL Cert works but still shows security warnings (because of changing Duck DNS I guess)
-                            ArcGIS Pro ONLY ALLOWS 1 PORTAL open at a time!  Change in Project tab
-            **Outcomes:**  Completed DNS, certifaction, video
-            **ToDOs:**     runArcGIS Server on EC2
-            **Time Spent:**  1.25 hours
-            **Resource Links:**  https://www.duckdns.org/domains  video: https://youtu.be/KItDcnDQce0
+**Insights:** SSL Cert works but still shows security warnings (because of changing Duck DNS I guess)  
+ArcGIS Pro ONLY ALLOWS 1 PORTAL open at a time!  Change in Project tab  
+**Outcomes:** Completed DNS, certifaction, video  
+**ToDOs:** runArcGIS Server on EC2  
+**Time Spent:** 1.25 hours  
+**Resource Links:** <https://www.duckdns.org/domains>  video: <https://youtu.be/KItDcnDQce0>  
 
 ####    March 16 - Working through week 9 checklist
             Watched 2 videos on Experience Builder
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  like dashboard on steroids
-                            There is a LOT of back-end programming on this!
-            **Outcomes:**  Completed videos
-            **ToDOs:**     
-            **Time Spent:**  1.25 hours
-            **Resource Links:**  video 1: https://www.youtube.com/watch?v=pNrsd5naN7U  video2: https://www.youtube.com/watch?v=Vu6_pBa7zis
+**Insights:** like dashboard on steroids  
+There is a LOT of back-end programming on this!  
+**Outcomes:** Completed videos  
+**ToDOs:**       
+**Time Spent:** 1.25 hours  
+**Resource Links:** video 1: <https://www.youtube.com/watch?v=pNrsd5naN7U>  video2: <https://www.youtube.com/watch?v=Vu6_pBa7zis>  
 
 ####    March 18 - Working through week 9 checklist
             Experimenting with Experience Builder
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  some widget functionality not what it seems!
-                           Everything set through Properties panel on right, but some settings are tricky
-            **Outcomes:**  Created very basic experience builder template
-            **ToDOs:**     Test and expand capabilities of Experience Builder example
-            **Time Spent:**  1 hours
-            **Resource Links:**  https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/
+**Insights:** some widget functionality not what it seems!  
+Everything set through Properties panel on right, but some settings are tricky  
+**Outcomes:** Created very basic experience builder template  
+**ToDOs:** Test and expand capabilities of Experience Builder example  
+**Time Spent:** 1 hours  
+**Resource Links:** <https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/>
 
 ####    March 19 - Working through week 9 checklist
             Expanding Experience Builder proof-of-concept
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  widgets and functionality very keyed to data sources - need to be clear on what layers are where!
-            **Outcomes:**  Activated Map View, discovered Feature View widget (useful!)
-            **ToDOs:**     Feature View seems to be reseting initial map in Experience Builder example - explore
-            **Time Spent:**  1 hours
-            **Resource Links:**  https://account.mapbox.com/
+**Insights:** widgets and functionality very keyed to data sources - need to be clear on what layers are where!  
+**Outcomes:** Activated Map View, discovered Feature View widget (useful!)  
+**ToDOs:** Feature View seems to be reseting initial map in Experience Builder example - explore  
+**Time Spent:** 1 hours  
+**Resource Links:** <https://account.mapbox.com/>
 
 
 ## Week 10-11
@@ -52,38 +52,38 @@ tracking research and development time spent toward Geom99 Final Project for Tea
 ####    March 22 - Working through week 9 checklist
             Create and Explore Mapbox account
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  mapbox more programming/less GUI  - versitile, useful, but needs research to execute
-            **Outcomes:**  account created and some exploration
-            **ToDOs:**     create and embed a map using mapbox
-            **Time Spent:**  0.5 hours
-            **Resource Links:**  https://account.mapbox.com/
+**Insights:** mapbox more programming/less GUI  - versitile, useful, but needs research to execute  
+**Outcomes:** account created and some exploration  
+**ToDOs:** create and embed a map using mapbox  
+**Time Spent:** 0.5 hours  
+**Resource Links:** <https://account.mapbox.com/>  
 
 ####    March 23 - Working through week 9 checklist
             Create and Explore Leaflet account
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  very API-ish
-            **Outcomes:**  account created and some exploration
-            **ToDOs:**     create and embed a map using leaflet - need more exploration of this one
-            **Time Spent:**  0.25 hours
-            **Resource Links:**  https://esri.github.io/esri-leaflet/
+**Insights:** very API-ish  
+**Outcomes:** account created and some exploration  
+**ToDOs:** create and embed a map using leaflet - need more exploration of this one  
+**Time Spent:** 0.25 hours  
+**Resource Links:** <https://esri.github.io/esri-leaflet/>
 
 ####    March 24 - Working through week 9 checklist
             Research and experiment with ESRI WebAppBuilder
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  working this after working with experience builder I see that this is maybe slightly easier, but way less customizable
-            **Outcomes:**   Created WebApp example called Test
-            **ToDOs:**     
-            **Time Spent:**  0.5 hours
-            **Resource Links:**  https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=06ae26881a784cdfb79f61fa51c12216
+**Insights:**  working this after working with experience builder I see that this is maybe slightly easier, but way less customizable  
+**Outcomes:**   Created WebApp example called Test  
+**ToDOs:**       
+**Time Spent:**  0.5 hours  
+**Resource Links:** <https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=06ae26881a784cdfb79f61fa51c12216>  
 
 ####    March 25 - Working through week 9 checklist
             Web Delta/Happy Puppies team meeting to discuss use of Experience Builder
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-            **Insights:**  there are worrisome bugs in Experience Builder, but also useful functionality, so it's a trade off
-            **Outcomes:**   we are all excited to try Experience Builder, but nervous that it may be more difficult that it's worth for us
-            **ToDOs:**     create and embed a map using leaflet - need more exploration of this one
-            **Time Spent:**  0.25 hours
-            **Resource Links:** 
+**Insights:**  there are worrisome bugs in Experience Builder, but also useful functionality, so it's a trade off  
+**Outcomes:**   we are all excited to try Experience Builder, but nervous that it may be more difficult that it's worth for us  
+**ToDOs:**     create and embed a map using leaflet - need more exploration of this one  
+**Time Spent:**  0.25 hours  
+**Resource Links:** 
 
 ####    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
             Experience Builder Insights:  
