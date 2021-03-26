@@ -8,7 +8,7 @@ tracking research and development time spent toward Geom99 Final Project for Tea
 ## Week 10-11
     Working through Experience Builder to examine its efficacy for our project
 
-###    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
+####    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
             Experience Builder Insights:  
             1) Use Different views to be able to show correct initial view of map
             since the Feature Views widget will cause a selection to zoom the map initially regardless of
