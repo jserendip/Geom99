@@ -36,6 +36,23 @@ tracking research and development time spent toward Geom99 Final Project for Tea
             **Time Spent:**  1 hours
             **Resource Links:**  https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/
 
+####    March 19 - Working through week 9 checklist
+            Expanding Experience Builder proof-of-concept
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  widgets and functionality very keyed to data sources - need to be clear on what layers are where!
+            **Outcomes:**  Activated Map View, discovered Feature View widget (useful!)
+            **ToDOs:**     Feature View seems to be reseting initial map in Experience Builder example - explore
+            **Time Spent:**  1 hours
+            **Resource Links:**  https://account.mapbox.com/
+
+####    March 22 - Working through week 9 checklist
+            Create and Explore Mapbox account
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+            **Insights:**  mapbox more programming/less GUI  - versitile, useful, but needs research to execute
+            **Outcomes:**  account created and some exploration
+            **ToDOs:**     create and embed a map using mapbox
+            **Time Spent:**  0.5 hours
+            **Resource Links:**  
 
 ## Week 10-11
     Working through Experience Builder to determine if we want to use it for our project or switch to StoryMaps
