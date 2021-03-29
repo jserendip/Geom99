@@ -88,7 +88,7 @@ Everything set through Properties panel on right, but some settings are tricky
 ####    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
             Experience Builder Insights:  
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-**Insights:** very API-ish  
+**Insights:** This tool is cumbersome and buggy, but very versitile!  
 **Outcomes:** 1) Use Different views to be able to show correct initial view of map  
 since the Feature Views widget will cause a selection to zoom the map initially regardless of  
 initial map settings.  This works great and helps me understand different ways to use the views feature!  
