@@ -119,10 +119,10 @@ for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very c
 ####    March 30 - Accessing SDE GDB on Virtual Server
             Kevin Rabjohn created an Enterprise geodatabase for our collab group to use for our data handling on the Fleming virtual server, but it would not give us permission to register features as versioned.  A new GDB was constructed for us which did work fine. 
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-**Insights:** There are many layers of complexity to permissions in Enterprise!  Kevin was not able to figure out why we could not register our features classes as versioned. Talking to Rahul, it seems it may be his attempt to give us too many privileges that then ironically interfered with the privileges we needed. 
-**Outcomes:** Kevin created a new GDB for us that works correctly, with a new user code. Kristine already uploaded most of our current data.
-**ToDOs:** Start creating individual users and user versions so we can begin to explore the data.  
-**Time Spent:** 0.5 hours  
+**Insights:** There are many layers of complexity to permissions in Enterprise!  Kevin was not able to figure out why we could not register our features classes as versioned. Talking to Rahul, it seems it may be his attempt to give us too many privileges that then ironically interfered with the privileges we needed.   
+**Outcomes:** Kevin created a new GDB for us that works correctly, with a new user code. Kristine already uploaded most of our current data.  
+**ToDOs:** Start creating individual users and user versions so we can begin to explore the data.    
+**Time Spent:** 0.5 hours    
 **Resource Links:**
 
 ## Week 12-13
