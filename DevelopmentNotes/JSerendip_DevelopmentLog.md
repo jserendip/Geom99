@@ -76,33 +76,54 @@ Everything set through Properties panel on right, but some settings are tricky
 **Time Spent:**  0.5 hours  
 **Resource Links:** <https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=06ae26881a784cdfb79f61fa51c12216>  
 
+## Week 11-12
 ####    March 25 - Working through week 9 checklist
             Web Delta/Happy Puppies team meeting to discuss use of Experience Builder
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
-**Insights:**  there are worrisome bugs in Experience Builder, but also useful functionality, so it's a trade off  
+**Insights:**  there are worrisome bugs in Experience Builder, but also useful functionality, so it's a trade off.  We all found the interactivity of the widgets and data challenging to manage, and were particularly unsettled by the way the main map view keeps adjusting to selections in feature views.  When Shawn met with us, suggested to just use the Views to fix this!  
 **Outcomes:**   we are all excited to try Experience Builder, but nervous that it may be more difficult that it's worth for us  
-**ToDOs:**     create and embed a map using leaflet - need more exploration of this one  
-**Time Spent:**  0.25 hours  
+**ToDOs:**     Experiment with content for the remaining 2 Views in Experience Builder  
+**Time Spent:**  1 hours  
 **Resource Links:** 
 
-####    March 26 - After meeting with Shawn, we have decided to try more to make Experience Builder work for us
-            Experience Builder Insights:  
+####    March 26 - Experience Builder Exploration
+            After meeting with Shawn, we have decided to try more to make Experience Builder work for us  
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
 **Insights:** This tool is cumbersome and buggy, but very versitile!  
 **Outcomes:** 1) Use Different views to be able to show correct initial view of map  
 since the Feature Views widget will cause a selection to zoom the map initially regardless of  
-initial map settings.  This works great and helps me understand different ways to use the views feature!  
-2) The text for the Views menu is NOT EDITABLE in the widget properties!  Only in the page menu!  
-3) The Filter widget is amazing.  Added a View 2 for visuaoizing Stream Order using a series of filters  
+initial map settings.  This works great and helps me understand different ways to use the views feature.  
+2) The text for the Views menu is NOT EDITABLE in the widget properties!  Only in the page menu.  
+3) The Filter widget is amazing.  Added a View 2 for visualizing Stream Order using a series of filters  
 for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very cool!  
-**ToDOs:** create and embed a map using leaflet - need more exploration of this one  
-**Time Spent:** 0.25 hours  
+**ToDOs:** create additional content for Views 1 and 2  
+**Time Spent:** 0.75 hours  
 **Resource Links:** <https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/>  
+
                       
+####    March 29 - Constructing additional Views in Experience Builder
+            I have been working with a template in Experience Builder that uses 3 views,
+            and I have found that I can use the views not only to sort my data presenatation, but also to highlight thematic concepts.
+            Created stream order dynamic segmentatin map in ArcGIS Online Map Viewer from base stream map.
+            View 2 is now set to allow the user to filter the streams visible on the main map by Strahler Stream Order
+              
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** User-selected filters allow a degree of user-interactivity that can be helpful for our purposes - to be able to select streams by order.  
+**Outcomes:** 1) View 1 now has the basic map of our study area in the Rice Lake Plains along with an inset that shows stream order by dynamic segmentation.
+2) I included our Team Logo with a link to a shell URL for our team.
+3) View 2 now shows the Streams in our area.  There is a series of optional filters so that the user can choose to view only 1st order streams, only 1st & 2nd order, 1st, 2nd & 3rd order, or only streams above 3rd order.
+**ToDOs:** create and embed a map using leaflet - need more exploration of this one  
+**Time Spent:** 1.25 hours  
+**Resource Links:**stream order web map: <https://fleming.maps.arcgis.com/home/webmap/viewer.html?webmap=a623ec91c98440539270c9af3b80428f>
 
-
-
-## Week 11-12
+####    March 30 - Accessing SDE GDB on Virtual Server
+            Kevin Rabjohn created an Enterprise geodatabase for our collab group to use for our data handling on the Fleming virtual server, but it would not give us permission to register features as versioned. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** There are many layers of complexity to permissions in Enterprise!  Kevin was not able to figure out why we could not register our features classes as versioned.  
+**Outcomes:** Kevin created a new GDB for us that works correctly, with a new user code.
+**ToDOs:** create and embed a map using leaflet - need more exploration of this one  
+**Time Spent:** 0.5 hours  
+**Resource Links:**
 
 ## Week 12-13
 
