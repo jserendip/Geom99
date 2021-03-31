@@ -109,11 +109,11 @@ for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very c
               
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
 **Insights:** User-selected filters allow a degree of user-interactivity that can be helpful for our purposes - to be able to select streams by order.  
-**Outcomes:** 1) View 1 now has the basic map of our study area in the Rice Lake Plains along with an inset that shows stream order by dynamic segmentation.
-2) I included our Team Logo with a link to a shell URL for our team.
-3) View 2 now shows the Streams in our area.  There is a series of optional filters so that the user can choose to view only 1st order streams, only 1st & 2nd order, 1st, 2nd & 3rd order, or only streams above 3rd order.
-**ToDOs:** Create content for View 3, perhaps focusing on other waterbodies and/or nature conservation?  
-**Time Spent:** 1.25 hours  
+**Outcomes:** 1) View 1 now has the basic map of our study area in the Rice Lake Plains along with an inset that shows stream order by dynamic segmentation.  
+2) I included our Team Logo with a link to a shell URL for our team.  
+3) View 2 now shows the Streams in our area.  There is a series of optional filters so that the user can choose to view only 1st order streams, only 1st & 2nd order, 1st, 2nd & 3rd order, or only streams above 3rd order.  
+**ToDOs:** Create content for View 3, perhaps focusing on other waterbodies and/or nature conservation?    
+**Time Spent:** 1.25 hours    
 **Resource Links:**stream order web map: <https://fleming.maps.arcgis.com/home/webmap/viewer.html?webmap=a623ec91c98440539270c9af3b80428f>
 
 ####    March 30 - Accessing SDE GDB on Virtual Server
