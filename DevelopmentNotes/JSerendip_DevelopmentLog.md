@@ -127,6 +127,52 @@ for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very c
 
 ## Week 12-13
 
+####    March 31 - Meeting with other Experience Builder teams in Geom 99
+            Team Web Delta met with the other teams in Geom99 that are using Experience builder to share ideas and inspiration, challenges and difficulties.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Experience Builder can make a huge range of looks and functionality, so we need to really examine how we want to structure our project.  Some of the other teams showed prototypes using scrolling pages, beautiful graphics, other templates... a lot of it looked really good, but lacked the level of functionality of our current prototype.  
+**Outcomes:** We decided we would all try out some different templates to explore other looks.  We still want to have a shell page in github to hold our AGOL content, but want to make that content also have an essentially "stand alone page" look.    
+**ToDOs:** Create another Experience Builder prototype with a different look/template.    
+**Time Spent:** 1 hour    
+**Resource Links:**
+
+####    April 1 - Researching Stream Order Definitions
+            Since for this project Team Web Delta is doing a potential mock-up for our collab project (for Team Happy Puppies) which involves making a dynamic map of headwaters, it is important to understand the definition of headwaters and different systems for classifying and identifying headwater streams.  Toward this end, I read several papers on Headwaters, most usefully from Ontario Headwaters Institute (OHI) and Toronto and Region Conservation Authority (TRCA) - see links below.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Most sources consider headwaters to be Strahler Order 1 or 2, but some use 1,2 & 3, and there is even talk of "zero order" headwaters that are more ephemeral swales.  
+**Outcomes:** We will discuss this with our client to see if they have a specific working definition we must adopt, otherwise will go with defining headwaters as Order 1 and 2.    
+**ToDOs:** Discuss in client meeting April 7   
+**Time Spent:** 1.5 hours    
+**Resource Links:** Ontario Headwaters Institute Backgrounder: <https://ontarioheadwaters.ca/watershedmanagement/>  Toronto and Region Conservation Authority: <https://trca.ca>
+
+####    April 5 - Started new Experience Builder Prototype
+            To explore possible layouts and looks for our project I begin a second Experience Builder, this time using the "Pocket" template.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** The "pocket" template is very map-centric.  It focuses mostly on the use of bookmarks to highlight locations/objects on the map.  
+**Outcomes:** I am finally starting to understand how bookmarks work!  Also, learned that the display size settings are NOT just to "view" how it will look on different displays, but that you can set particular views to work in particular displays.    
+**ToDOs:** Flesh out this pocket template prototype and see what it can do!   
+**Time Spent:** 0.75 hours    
+**Resource Links:**
+
+####    April 6 - Meetin with Team Members to discuss strategies prior to client meeting
+            This meeting was largely to prepare for our client meeting April 7, but we also focused on the Geom99 project/dynamic map deliverable for collab.  We talked about what we have found so far with Experience Builder.  Kate is still getting the feel of Experience Builder overall, and Kristine is digging in to the actual developers side a bit.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** We will likely want to use a little of the developers functionality at some point, probably more for our actual final collab deliverable.  I am finding the widgets and templates just in their COTS form all seem to get clumsy in their interactions and settings.  I also am learning that I do NOT have the best visual design eye... It is hard for me to tell what looks good or bad on a page until it is done, so I really benefit from looking at the work of others with more design sense!  I am seeking out more Experience Builder Examples. 
+**Outcomes:** I am finally starting to understand how bookmarks work!  Also, learned that the display size settings are NOT just to "view" how it will look on different displays, but that you can set particular views to work in particular displays.    
+**ToDOs:** Keep finding new experience examples and trying other templates and options   
+**Time Spent:** 0.5 hours    
+**Resource Links:** Good example of Experience Builder with similar level of functionality to what we will want: <https://experience.arcgis.com/experience/2f68463e81294f37a68c8ef442e85b29?data_id=dataSource_3-Current_Dev_Proj_Read_Only_1586%3A34>
+
+####    April 7 - Meetin with Team Members and Collab client NCC
+            We met with our collab clients to discuss headwater definition, methodology for mapping, and specifics of deliverables, especially the dynamic map which is the focus of our geom99 project.  Demo'ed current prototype Experience Builder for clients and it really inspired them and started discussion which got us to a very different understanding of what they really want!  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** We had been operating under the premise that our collab clients' primary interest was in a static map of headwaters, but after demo'ing the Experience Builder they really got excited and as we questioned and dicussed further we realize they intend for the dynamic map to really be the main functional deliverable, and the static map is more of a display piece.  So this puts more importance on our geom99 work!
+**Outcomes:** Client loved the look of the dark basemap with streams showing in different colors by stream order for the static map as a large "poster".  They are also interested in the idea of making streams "clickable" to highlight their downstream progeny, and also filterable by water quality data.   
+**ToDOs:** Find Cold Water data, get Scoop2018 tiles from Tessa, explore further filtering options in Experience Builder   
+**Time Spent:** 1 hours    
+**Resource Links:** Possible source for water quality data: <https://data.ontario.ca/dataset/provincial-stream-water-quality-monitoring-network>
+
+
 ## Week 13-14
 
 ## Week 14-15
