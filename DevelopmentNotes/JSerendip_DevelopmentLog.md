@@ -163,7 +163,7 @@ for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very c
 **Time Spent:** 0.5 hours    
 **Resource Links:** Good example of Experience Builder with similar level of functionality to what we will want: <https://experience.arcgis.com/experience/2f68463e81294f37a68c8ef442e85b29?data_id=dataSource_3-Current_Dev_Proj_Read_Only_1586%3A34>
 
-####    April 7 - Meetin with Team Members and Collab client NCC
+####    April 7 - Meeting with Team Members and Collab client NCC
             We met with our collab clients to discuss headwater definition, methodology for mapping, and specifics of deliverables, especially the dynamic map which is the focus of our geom99 project.  Demo'ed current prototype Experience Builder for clients and it really inspired them and started discussion which got us to a very different understanding of what they really want!  
 ##### Insights, Outcomes, ToDos, Time Spent and Resource Links
 **Insights:** We had been operating under the premise that our collab clients' primary interest was in a static map of headwaters, but after demo'ing the Experience Builder they really got excited and as we questioned and dicussed further we realize they intend for the dynamic map to really be the main functional deliverable, and the static map is more of a display piece.  So this puts more importance on our geom99 work!
@@ -174,6 +174,51 @@ for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very c
 
 
 ## Week 13-14
+
+####    April 7 - Explore settings for Lists in Experience Builder in new jewlreybox template
+            Deep dive into the list widget and text widget within the list - worked on filtering data and creating new data views from filtered data. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Created custom data view to filter out only named headwaters greater than 750 meters.  Discovered how to set dynamic text to label list items from data source field - gives 3 options: auto-populate, Selected Features, data source - MUST use data source for it to be truly dynamic!  other options populate entire list with the value of selected field in first feature. 
+**Outcomes:** Created a list that is ONLY named streams order 1 or 2 and longer than 750 meters with each item in the list labelled by name and stream order with alternate style for selected list item.   
+**ToDOs:** incoporate this functionality in a more cohesive template   
+**Time Spent:** 1.75 hours    
+**Resource Links:** <https://experience.arcgis.com/experience/097faec5dc794430aab68a8404bf4275>
+
+####    April 8 - Team meeting going over Experience Builder prototypes
+            Showed my team what I learned about filtering lists and dynamic text.  Team members had designed experiences that have a more cohesive website-ish look.  These are good for this Geom99 project!  We decided I should continue to focus on learning functionality and they will continue to work on design and look.  Began working on another experience sample to explore using bookmarks to switch between map layer views.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** I'm still having trouble using bookmarks!  It seems that they are for zooming, seelcting, highlighting and annotating map sections (or other content) but not for switching to different data.
+**Outcomes:** Still looking for the best way to have user-controlled switching between map content (stream orders) that looks consistent and is easy to use.   
+**ToDOs:** Work more with views or multiple maps.   
+**Time Spent:** 0.5 hours    
+**Resource Links:**
+
+####    April 9 - Team meeting w/Shawn and follow-up work with Hub
+            Going over our status in class, Shawn suggested we look into using Hub instead of HTML on Github for holding our content for this project.  We all liked the idea of it and the look, so began playing around with Hub layouts.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Hub is basically a flexible template that easily constructs a website-ish look from content that includes ESRI-generated and housed content (AGOL stuff).  Seems simpler to use than Experience builder, but less functionality, just easier design.
+**Outcomes:** We all felt that Hub was worth pursuing as the overall container for our Geom99 project, though it will not be used for our Collab project deliverable since they are looking strictly for functionality and so Hub would not add to that, just create another layer for the user to work through.  We all begain exploring Hub designs.   
+**ToDOs:** Start integrating some of the Experience pieces into Hub.   
+**Time Spent:** 1 hours    
+**Resource Links:**
+
+####    April 12 - Created multiple web maps to consume in Experience Builder or Hub
+            To give me more options for displaying different data in different way, I created multiple separate web maps with just certain categories of stream order, publishing them to AGOL from Pro. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Because Hub lacks some of the functionality of Experience Builder, we can make up for that by doing more data preprocessing in Pro and just having more individual resources in AGOL to drawn from.
+**Outcomes:** Created a menu in Hub to view stream order maps by stream order.  I did not get at all a complete Hub built, and then there was a problem with the account/access-token, and it would not save, so have to redo it, but at least figured out a way to display the content I want.   
+**ToDOs:** In lab this week the team will all work on combining our various pieces in a cohesive Hub.   
+**Time Spent:** 1.25 hours    
+**Resource Links:** no link since there was a problem and could not save.
+
+####    April 13 - Team Meeting with Advisor
+            Team met briefly with Paige and filled her in on the developments from our client meeting previous week.  She was suprised to hear the direction the client's interest has taken, as she too thought they were mostly interested in the static map, so agrees with the emphasis for Collab being more on the dynamic app.  We discussed concerns about functionality of clickable streams that select downstream segments, but since this can be accomplished with filters in Experience Builder, I am confident we can find a way to make it more "point-and-click". 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** I might need to learn how to modify the widget geojson code in the jimu-library.
+**Outcomes:** Began modifying some old hydro data to use for test case, since our current stream data does not contain "Nextdown_ID" info.   
+**ToDOs:** Watch more Experience Builder for Developers demos and tutorials for modifying widget code, bring Nextdown_Id data into Experience.   
+**Time Spent:** 0.5 hours    
+**Resource Links:**
 
 ## Week 14-15
 
