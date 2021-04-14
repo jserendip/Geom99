@@ -1,408 +1,225 @@
-# Geom99
-Fleming College Geom99 repository of examples and guides for google map APIs
-## Google MyMaps Tutorial
-Due Jan 25, 2021 12:00 PM
+# James Serendip Development Log
+tracking research and development time spent toward Geom99 Final Project for Team "Web Delta"
+## Week 9-10
+    This week's focus has been on the week 9 checklist - to go through various tools and options for 
+    developing web maps, web apps, and custom web solutions applicable to Geom 99 final project for team 
+    Web Delta, and also research for possible solutions for final collaborative project (Team Happy Puppies)
 
-Create Please complete the full exercise provided by Google. With the final map, can you embed this into a website? Create a visually pleasing yet simple "shark spotters" page that references your created map. 
+####    March 15 - Working through checklists
+            Set up DuckDNS, SSL Certification
+            Watch video on managing Portal from Map/Pro
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** SSL Cert works but still shows security warnings (because of changing Duck DNS I guess)  
+ArcGIS Pro ONLY ALLOWS 1 PORTAL open at a time!  Change in Project tab  
+**Outcomes:** Completed DNS, certifaction, video  
+**ToDOs:** runArcGIS Server on EC2  
+**Time Spent:** 1.25 hours  
+**Resource Links:** <https://www.duckdns.org/domains>  video: <https://youtu.be/KItDcnDQce0>  
 
-https://www.google.com/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/
+####    March 16 - Working through week 9 checklist
+            Watched 2 videos on Experience Builder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** like dashboard on steroids  
+There is a LOT of back-end programming on this!  
+**Outcomes:** Completed videos  
+**ToDOs:**       
+**Time Spent:** 1.25 hours  
+**Resource Links:** video 1: <https://www.youtube.com/watch?v=pNrsd5naN7U>  video2: <https://www.youtube.com/watch?v=Vu6_pBa7zis>  
 
-Issues with embedding it using an iframe? Be sure you're using the "embed" link. See an example of the solution here: https://shawnmflemingc.github.io/geom99/mymapsiframe.html
+####    March 18 - Working through week 9 checklist
+            Experimenting with Experience Builder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** some widget functionality not what it seems!  
+Everything set through Properties panel on right, but some settings are tricky  
+**Outcomes:** Created very basic experience builder template  
+**ToDOs:** Test and expand capabilities of Experience Builder example  
+**Time Spent:** 1 hours  
+**Resource Links:** <https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/>
 
-My Shark Sightings & Beaches map is found here: https://jserendip.github.io/Geom99/Gmaps/sharksighting.html
-
-## Google Maps as a Development Platform
-Due Jan 25, 2021 12:00 PM
-
-Read Understand the three pillars of Google Maps as a platform: Maps, Routes and Places. 
-
-https://cloud.google.com/maps-platform/ (using the "getting started" button does all this: https://developers.google.com/maps/gmp-get-started)
-
-Get started and be sure to enable keys for all the three environments. Then try to create an introductory example for each of the "getting started" items
-
-(You can find most of the samples and more directly on GitHub at this address: https://github.com/googlemaps/js-samples)
-### 1. JavaScript API (HTML Interactive Map):
-
-Create Create the Overview (hello world) example and host in GitHub: https://developers.google.com/maps/documentation/javascript/tutorial
-
-My "Hello World" Javascript API basic map: https://jserendip.github.io/Geom99/Gmaps/helloworld.html
-
-### 2. Directions API (JSON Return)
-
-Create Follow the Get Started instructions for directions and form a URL to provide route directions in JSON: https://developers.google.com/maps/documentation/directions/start
-
-Note:  Due to CORS you cannot "use" this result client-side in JavaScript or target an iFrame. This url generates only a JSON response, not a webpage -- that is all  you need -- put your URL into an HTML document and share an example "JSON" result from that URL. Make that HTML link an A tag so it can be clicked and target a new tab. 
-
-If not creating a webpage to run your URL, at least document it using the GitHub MD file / markdown language (https://guides.github.com/features/mastering-markdown/). Be sure you include BOTH your URL and the valid RESPONSE in your MD or HTML webpage documentation. 
-
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/directionsJSON.html
-
-#### My JSON Response code is shown below:
-```json
-{
-   "geocoded_waypoints" : [
-      {
-         "geocoder_status" : "OK",
-         "place_id" : "ChIJa147K9HX3IAR-lwiGIQv9i4",
-         "types" : [
-            "amusement_park",
-            "establishment",
-            "point_of_interest",
-            "tourist_attraction"
-         ]
-      },
-      {
-         "geocoder_status" : "OK",
-         "place_id" : "ChIJzzgyJU--woARcZqceSdQ3dM",
-         "types" : [
-            "amusement_park",
-            "establishment",
-            "point_of_interest",
-            "tourist_attraction"
-         ]
-      }
-   ],
-   "routes" : [
-      {
-         "bounds" : {
-            "northeast" : {
-               "lat" : 34.1358593,
-               "lng" : -117.9221251
-            },
-            "southwest" : {
-               "lat" : 33.8160535,
-               "lng" : -118.3516953
-            }
-         },
-         "copyrights" : "Map data ©2021",
-         "legs" : [
-            {
-               "distance" : {
-                  "text" : "34.9 mi",
-                  "value" : 56098
-               },
-               "duration" : {
-                  "text" : "38 mins",
-                  "value" : 2274
-               },
-               "end_address" : "100 Universal City Plaza, Universal City, CA 91608, USA",
-               "end_location" : {
-                  "lat" : 34.1358593,
-                  "lng" : -118.3511633
-               },
-               "start_address" : "1313 Disneyland Dr, Anaheim, CA 92802, USA",
-               "start_location" : {
-                  "lat" : 33.8160535,
-                  "lng" : -117.9224058
-               },
-               "steps" : [
-                  {
-                     "distance" : {
-                        "text" : "0.3 mi",
-                        "value" : 464
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 50
-                     },
-                     "end_location" : {
-                        "lat" : 33.8201231,
-                        "lng" : -117.9228153
-                     },
-                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e toward \u003cb\u003eDisneyland Dr\u003c/b\u003e",
-                     "polyline" : {
-                        "points" : "iukmE`vvnUAAUGOEWGYGe@Ia@GQAQAQAQAQ?G?[??@c@?M@U@_@@C?_@D]HqCp@_@HC@_ATC@K@]JKDID[DG?EA"
-                     },
-                     "start_location" : {
-                        "lat" : 33.8160535,
-                        "lng" : -117.9224058
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "256 ft",
-                        "value" : 78
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 9
-                     },
-                     "end_location" : {
-                        "lat" : 33.8207878,
-                        "lng" : -117.9230963
-                     },
-                     "html_instructions" : "Continue straight onto \u003cb\u003eDisneyland Dr\u003c/b\u003e",
-                     "maneuver" : "straight",
-                     "polyline" : {
-                        "points" : "wnlmErxvnUUJc@LEBeAX"
-                     },
-                     "start_location" : {
-                        "lat" : 33.8201231,
-                        "lng" : -117.9228153
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "2.6 mi",
-                        "value" : 4183
-                     },
-                     "duration" : {
-                        "text" : "3 mins",
-                        "value" : 150
-                     },
-                     "end_location" : {
-                        "lat" : 33.8437993,
-                        "lng" : -117.9557998
-                     },
-                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e to merge onto \u003cb\u003eI-5 N\u003c/b\u003e toward \u003cb\u003eLos Angeles\u003c/b\u003e",
-                     "maneuver" : "ramp-right",
-                     "polyline" : {
-                        "points" : "}rlmEjzvnUi@MICEASIcA]{@[C?SGSGMEMEC?KCSAEAMAO?E?]@C?E@E?MBE@I@IBKBA@UJE@EBIDGDKF{AtAs@l@y@r@y@r@_At@WTs@l@qAjA_@\\]p@}ApAg@b@iAdA}BbCSTYXw@z@[ZyB`Cs@v@ST]^CDyBdCw@x@qBtB}@~@_AbA{@|@s@x@KLEBEDSPGF_BhCa@r@Wh@Wf@Sf@c@jAOb@K^ITW`AMd@_@xAWnAU`Bm@jEi@`Eu@hFOv@GXWlAMh@e@|AM`@M^KX{@vBuAzCSd@aGrMwDvISd@aEjJgB|DsBtEaF~KMVm@rAWn@i@jAg@fA[p@[l@aAdBe@x@"
-                     },
-                     "start_location" : {
-                        "lat" : 33.8207878,
-                        "lng" : -117.9230963
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "4.8 mi",
-                        "value" : 7776
-                     },
-                     "duration" : {
-                        "text" : "4 mins",
-                        "value" : 263
-                     },
-                     "end_location" : {
-                        "lat" : 33.8823716,
-                        "lng" : -118.0255065
-                     },
-                     "html_instructions" : "Keep \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003eI-5 N\u003c/b\u003e",
-                     "maneuver" : "keep-left",
-                     "polyline" : {
-                        "points" : "wbqmEvf}nUm@fA}@|AQZYd@[h@U`@QZ[l@c@|@_@v@{@rBUn@m@~AEHs@lBk@|AsB~EaC~F_A`C_@~@Uf@[t@aChGQf@{CjHyAjDiAhCoAxCmDhIkApCkAdCEFoA|B_@j@Yf@gA~Aa@l@g@p@W^a@j@GHgAtAu@dAiCpDY\\aB|Be@z@?@A@IPKRA@?@GJSd@_@~@Qh@Qh@WdAADAFGZYrA[xAId@GREVSbAU~@k@vB[lACF_AzE?@YlAMl@ADWbAOn@}@hCQh@k@~AcB~DYp@Wh@INgAzBc@x@QZgBzC_BpC[f@c@t@U^KPqB`ESb@ABQ^g@fASb@Sf@c@`AoAtCe@fAaBtDg@hAy@jBsAbD}@nBOZKV]v@oArCSb@Q`@?@Sb@aBpDi@hAy@lBKVsAnCABGHGNINEJCJGJGRc@`A[t@c@`AoAlCmBjEMZ]t@_@z@w@bBe@|@c@r@OTOTA@SZCBc@r@a@h@g@n@e@j@Y^QRkAfAsBlBoBfCi@v@W^g@v@[d@s@jACDa@n@IJABSZ{@xAmAzB_CrFeAnCYz@Wz@ENKXoAzDeB|E]`ACHELITGNYx@ENKTkApCe@fAOZ}@rB{@lBQb@Yp@}@rBaAzBIN]x@Sb@u@fBiBdE"
-                     },
-                     "start_location" : {
-                        "lat" : 33.8437993,
-                        "lng" : -117.9557998
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "12.6 mi",
-                        "value" : 20356
-                     },
-                     "duration" : {
-                        "text" : "14 mins",
-                        "value" : 816
-                     },
-                     "end_location" : {
-                        "lat" : 34.0151967,
-                        "lng" : -118.1701571
-                     },
-                     "html_instructions" : "Keep \u003cb\u003eleft\u003c/b\u003e to stay on \u003cb\u003eI-5 N\u003c/b\u003e",
-                     "maneuver" : "keep-left",
-                     "polyline" : {
-                        "points" : "ysxmElzjoUsAdDiAtB_BxCaAfB}AvCUd@w@bBQ^O\\y@tBa@fAIVq@zAgA~BGJgBjD[f@GLELIREJsA`Dc@bASj@y@rBa@~@aA|B[x@e@hA]z@a@bAsAhD?@uCbHSd@O`@g@jAABm@vAsA`DmB`FIPwC~GiF|Ky@`BGJmBvD{AzCsFxKQ\\yC`Gw@fBoDzHu@|A}B~EqCtG{@nB_@x@Q`@[p@KTKToApCu@zAaAdBc@r@a@r@kAnBmAnBaB~BW\\qAdBi@p@m@r@EDgBnBaChCmChCEBeAfAuCrCgAdAKJmBlBgBbBoArAwA~AyAfBm@x@c@p@sAvBqAhCwAnCu@bBu@dBq@zAq@vAi@dAs@pAs@hAg@p@iBnC_BzBcApA{A`B{A`Bk@h@o@j@cAt@]X]XcDvBw@d@w@d@}CnBi@^y@f@w@d@KFIFOJOJEDQJEB[PsDzBgBhA{ClB{@j@YP}HzE_@TyA~@A?{BtAA@[RA?]T}BtA]RA@}@h@}BrAwA|@{BvAi@Xg@Ze@XaBlAwCpB{@l@kD`CgA|@_@ReCxAoG`EcAn@SLm@^wAz@a@Vu@`@kF`D_@R?@wBlAGBoBjA}BrAKFGDu@b@k@Xi@XWNcB`Aa@VoDvBwCbBcAn@}@h@sBhAe@Ve@V[RMF_@Ru@b@GDm@\\yAz@SJc@VeAn@q@`@}A|@sBjA}@h@]TcDjBkAp@cAl@ID}@h@wCdB_@T_@T_Ap@y@n@g@b@i@f@_@^a@`@UXm@r@_@b@a@j@QVwAvBk@|@A@W^cA~AeA`B{BhDgAbBg@t@uAxBg@t@uCnEgA`Bc@p@a@p@s@fAY`@oCdE}@tASZw@lAiIhMW^uBbDW^gAdBSXSZg@n@MPEDe@j@_@^[\\kAdAe@\\UNOLs@d@CB}@j@sAr@e@TC@MD[Lq@Vs@R_B`@iE|@WFqDr@sAZs@NWDcB^ODc@HcB\\C@]HaAP}A\\c@Jg@JgAZi@Nu@XiAd@gAh@eAl@MHKFe@TOHc@Xe@\\g@ZONa@ZcAr@_C~A[PeAr@SNyB|A_@\\cAz@qAnAoApA_A|@{A|AYX_A~@}@|@eAbAs@t@uBtBoBpBmAlA{AzAm@j@YZ]\\kAhAeAhAg@f@KLOPs@|@a@n@QXq@fA{@vAy@tA]l@[b@w@nA]b@c@h@YZ[\\w@x@WVCBKJA@MN_@\\s@p@wAvAoAnA}@x@y@v@A@eB~Ao@l@cA`Ai@h@aIrHiJzIONoBjB_@Zc@`@ED]Za@^a@^ONi@b@u@j@q@f@cAj@IDYPo@^w@\\w@b@y@d@ID]PA@g@\\_Ap@w@n@EDeBbBwCpCmBbB}AxA_CvB}AvAu@r@cA`AoAtAgEdFgBtBY\\aCrCwAjBa@r@[d@i@|@S^Wf@g@`AYj@o@fAS\\QVg@n@[b@_@d@c@d@i@h@UTs@l@uBhBw@r@OLED]\\m@n@m@n@k@v@a@l@[h@s@nAi@pAeAxCO^IPWt@Od@MZCFy@dCw@xBOb@cCbHcAtCaAvCWbAm@pCy@lE"
-                     },
-                     "start_location" : {
-                        "lat" : 33.8823716,
-                        "lng" : -118.0255065
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "2.2 mi",
-                        "value" : 3574
-                     },
-                     "duration" : {
-                        "text" : "2 mins",
-                        "value" : 144
-                     },
-                     "end_location" : {
-                        "lat" : 34.0256221,
-                        "lng" : -118.2059515
-                     },
-                     "html_instructions" : "Keep \u003cb\u003eright\u003c/b\u003e to stay on \u003cb\u003eI-5 N\u003c/b\u003e",
-                     "maneuver" : "keep-right",
-                     "polyline" : {
-                        "points" : "_rrnEnbgpUq@rC_@bAYp@KVg@dAq@pAOXIPA@A@Ud@MXABEJGNCFAB[t@ADADi@~ASl@EPITWt@eAzC_AvCkCrHa@hA?@A?ENs@lBe@vAYbAK`@ABU~@CLMt@m@vDMrAMrA?@OtDC`G?bIBpK@lB?nE?rEA`D?@Ct@EjAC`@C`@Gt@MrAE^Ih@Mz@QfAKh@Mf@Qt@Of@W|@Sp@wBpGiAfD{@jCQf@Od@q@pBOf@eBdFAFaB|EaBfF}AvE_@hAMb@_@pA[lAELI\\M`@"
-                     },
-                     "start_location" : {
-                        "lat" : 34.0151967,
-                        "lng" : -118.1701571
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "11.7 mi",
-                        "value" : 18764
-                     },
-                     "duration" : {
-                        "text" : "13 mins",
-                        "value" : 774
-                     },
-                     "end_location" : {
-                        "lat" : 34.1291624,
-                        "lng" : -118.3472425
-                     },
-                     "html_instructions" : "Keep \u003cb\u003eleft\u003c/b\u003e at the fork to continue on \u003cb\u003eUS-101 N\u003c/b\u003e, follow signs for \u003cb\u003eLos Angeles N\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eCivic Center\u003c/b\u003e",
-                     "maneuver" : "fork-left",
-                     "polyline" : {
-                        "points" : "cstnEdbnpU?b@CPCNg@xBW`AMf@Od@Ut@cArCmAnDKXIXSj@o@lBQd@_CzGwAfEIPM\\_@hA[~@_AnCe@vAi@zACDWn@a@dAWp@u@fBO\\S`@]p@IPCDGLMTOZ]j@]h@QZc@j@W\\UZe@j@KNGDABC@C@SHiAhAA?EDw@x@[Zs@h@m@`@]TKDQLQF[NEBSJE@KDMDiAXC@]JWDg@FOB]Dy@DU?_@@u@As@EoBWy@Gu@Ek@?GAW?_@@[BmAFy@Fa@@U@a@?W?a@Aa@CC?]C]Cu@KsB[oC]}CU]Ak@Ae@?wA@iB@oC@k@?}AF]@K?aAHS@k@Di@Hm@Fm@JyAXi@L_Bb@C@_A\\c@PsAh@UHeAh@_@L]Nc@Pc@Pe@R}@\\{An@WNUNA?ML_@XMNIJQRQVGJABIJQ^[z@A??BEJOd@CLAHCJAHCP?HCNAPARAb@Er@?HAF?DAJ?DADG^AJC^AFATCJ?DAJOnAU~BKhAEZC`@CNMrAKpAQzBMtAOzBCRGbAAJK|ACRAT?TCv@ARCVEZIdAGbA?BCZEbACj@CdAAz@Bv@@J@PDbA?j@At@Ab@C\\Gp@CNGZG\\I^GPCJUl@Wn@CHCDIPOZOVa@v@_@n@MVS\\QZGLYh@S^QZGJGJIPKPGJmA|Bk@fA_@p@k@dAS`@o@jA]n@QZ]n@_@p@KNs@lAMRKP]h@w@pAm@v@U\\CBUXCDSVmAzAST_@`@i@h@g@d@g@b@UPURSPA@eBvAOLiAz@k@d@eBtACDi@b@GD]XEDUPURGD_@ZYXSRONY\\QTY`@UZW^g@x@]h@GHq@dASXW`@[`@S\\e@p@w@lAINe@p@U`@m@|@A@cA~Aa@p@OXg@`AMXYl@Q`@O\\Wr@O^GPGR[~@ELMd@?@K\\_@tA?B[nAi@tBa@zAcAbE_@xAWdAABu@zCCD[nAK`@ADe@jBMf@Mf@Mf@YhAQj@Oh@q@vB[x@Yx@]dAc@nAa@nAADc@jA]fAABQd@a@jACLYv@KX]jAY~@_@fAAHGNGTADyAvEc@jAGPIRu@jBg@lAc@fAM^K\\Od@m@nBa@|AYdAKb@Mj@ET_@lBw@dE]~Au@~Dq@rDWlAUlACHAJMn@I`@I`@If@YjB]`CO`A?@Kr@?DCP_@nCm@~DQpAAJQdACTETc@fDMjAShBKlACPGh@Ij@Ij@Mx@[hBId@Ot@c@hBCJMj@Qj@c@lAKZUj@CDO^[p@Yr@CDSb@S`@MZEJe@fAYn@eAhCO^}@dC}@`Cm@dBQd@y@|BsArDSh@g@rAEHSb@_@x@?Ba@t@KRSb@Wd@CD]n@c@x@o@bAe@t@c@t@_@l@ILILABMTKPMPqBfD{AbCu@hAOVmAjBQTILg@l@g@n@i@f@k@j@k@d@e@^w@n@]T{@f@]TC@wAt@iExB]RA?}@d@[NCBq@\\k@XUN[P]To@d@URa@`@i@h@WVc@n@QTQVMP_@n@i@`AEJAB]l@o@lA_AfBc@x@eAjBg@~@m@dAq@`AILORg@r@e@l@QREFa@^_@^KHYV[Tq@h@YPe@`@_Ah@EDwAt@k@VoAn@}GhDyAt@a@Pe@Vg@Tu@^s@b@]T]X]VSRURYZg@l@UVOTU\\g@~@i@fA]|@Y~@g@zBG\\Mv@E`@E\\Gx@A@?RCXC|@A^?h@?^?TA^Av@?F?Z?~@Cn@?@A`@Cb@G|@ALCRE\\G\\CRABEVEPAHK`@K`@Oj@i@xAQ^Wj@Wh@]l@u@vAu@vAOZEFU`@]r@[r@{@`BcDvGu@zAkAzBm@lAQXkA`Cg@|@[n@[j@KL[f@W\\EFY^[^c@b@GFCD]XMJm@f@w@h@w@`@y@^w@VgAZw@Rs@NmBd@eE`Ac@J_Ez@uBb@}AX{@NsB\\sAZwAf@iA`@kAd@gAh@cAl@aAj@gAv@{@n@cAx@o@j@y@x@s@z@i@n@m@t@]`@kB~BSR{@jAcAlA[^UZC@[`@SVA@WZe@f@g@f@ONi@d@C@EDOJe@\\E@ABu@d@GDA?gB`ASL[RYRWPQLQL_@\\MLQPg@h@gBhBCDIDOPGFOPONKLGDw@x@_A~@"
-                     },
-                     "start_location" : {
-                        "lat" : 34.0256221,
-                        "lng" : -118.2059515
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "0.1 mi",
-                        "value" : 222
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 12
-                     },
-                     "end_location" : {
-                        "lat" : 34.1307998,
-                        "lng" : -118.3485738
-                     },
-                     "html_instructions" : "Take exit \u003cb\u003e11B\u003c/b\u003e toward \u003cb\u003eUniversal Studios Bl\u003c/b\u003e",
-                     "maneuver" : "ramp-right",
-                     "polyline" : {
-                        "points" : "gzhoEfuiqUWDE@y@r@MJURYXA?IHe@`@]ZUTKHGHMHOLCBUD"
-                     },
-                     "start_location" : {
-                        "lat" : 34.1291624,
-                        "lng" : -118.3472425
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "0.3 mi",
-                        "value" : 447
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 30
-                     },
-                     "end_location" : {
-                        "lat" : 34.1338819,
-                        "lng" : -118.3515888
-                     },
-                     "html_instructions" : "Merge onto \u003cb\u003eW.C. Fields Dr\u003c/b\u003e",
-                     "maneuver" : "merge",
-                     "polyline" : {
-                        "points" : "odioEp}iqUMLSLYNEBYNe@Xk@^]T]TQLMH_@Tm@l@[b@U\\S\\CDQZGLKNGLGFCFEDCBCBCBC@EDEBEBC@EDCBEBEBCB?@CBC@CBEFCBCDEDEFINUd@"
-                     },
-                     "start_location" : {
-                        "lat" : 34.1307998,
-                        "lng" : -118.3485738
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "0.1 mi",
-                        "value" : 234
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 26
-                     },
-                     "end_location" : {
-                        "lat" : 34.1358593,
-                        "lng" : -118.3511633
-                     },
-                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eUniversal Studios Blvd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
-                     "maneuver" : "turn-right",
-                     "polyline" : {
-                        "points" : "wwioElpjqUQNA@A@A?A@C?C?A?A?A?C?CAA?CAAAA??AA?CAEAC?A?A?A?A?A?A?OQCAAAECUMGCGCECGCGCICICICGAECKACAGAIAGAGAG?IAQAMAI?IAI?K?I@O@IA"
-                     },
-                     "start_location" : {
-                        "lat" : 34.1338819,
-                        "lng" : -118.3515888
-                     },
-                     "travel_mode" : "DRIVING"
-                  }
-               ],
-               "traffic_speed_entry" : [],
-               "via_waypoint" : []
-            }
-         ],
-         "overview_polyline" : {
-            "points" : "iukmE`vvnUsDs@kBCgBDsE`AgD|@_ANi@PeAXi@MOEwAg@gBk@cBUqAJkAf@{KlJqBhB]p@}ApAqBhBqCxCgFrFiBrB}O~Pg@b@qDnGsAvDoAvEeC~PeBhKoAhEqDrI{a@h_AwCvG_D~FwF|JuCxGsCtH{Op`@{Udj@qEpHcCjDoGvIaDxEu@|A{AxEe@|Bs@jDqBhIuCzMoArDoC~GcCfF_JrOmG~MqVzj@}I~RiFjLaDpGgDzE}CfDsBlBoBfCaAvA{BnDaAzAiCtEeEbKcA`DiGrQuS~e@}CzGaD`G}D`IuBrFiFrKeEtJsJ~UeJvTwBrFaK|TkG`MwM`XuNn[gHvOsE|HyGrJeEzE{I~IwIrIiJ~JqAjBeD`GuFtLcExHuHnKsGxGcH`F_MxHuJdGaa@tV{JbGgItFoI`GmNxIaRzKkJnFy]lSyb@zVyDlCsClCeC|CwCnEkOtU_QzWwSv[oAbBmDnDkAz@iEhCsAj@eBj@iH~AqIfBoDt@yLlCqFxBeCtAwJ|GoFrDeGzFcPbPqOtOwBdCaDhFkDvF{AhBkCpCem@lk@{FbFyCjByEfCqAv@cFjEcNfMgHbHkMlO_EbGmBtD}BlDiCxCwF`Fs@p@iDdEoAxBoBjFaAlC}Kx[qDvPmBrEsB`EaFtNoIlV}@hD_AzFk@~I?v]?rTMdD_@jEu@vEgAbEqGvRoKz[eFrPCt@k@hCkAdE}JrY{HdUmEfKaChEqClDqFzEqDrBkEbA}BNuA?cD]cDOaDLsCJ_BEeFo@mHs@iACwJDsDHkDZuDl@mEpAsEnB}IrDeAv@{@fAcAzBe@zBg@fHaAtJyAzQgAhSFzIWzB]zAaCjF{CtFqLpTkFhI{BrCeCfCiH~FaG|EuCpCyEfHiF|HqFhJoCfHeCrJmJj_@eK|ZwBbHoChIoC`HkBpGy@jDkGb\\iB~K_CpPoBhPcBrKgAlEiAzCeCxFqItTcGzOoEfIyC`FkKnPeDpDgDjC}MhH}BjA_C|AyBvBuAnBcG~KmErHgBbCmE|DeCbBqNfHiEtBeDrBaBzAcBxBqAfCw@|BcArFYnGG`Ha@bF{@zDkBnEyCxFwLbVsGxLaDpDkD~BqFfBkKbCoMhCgEx@aDhAsCnAeCxAwFlEeEzEsIlKiAvAgCdCeCbBoFdDmFnFs@v@_A~@_A~@WD_At@MJ{@v@oCbCcE~BmAx@m@^iApAm@`Am@fAg@h@iAbA_ArAWA_@I}@k@cA]_AO}AEY?"
-         },
-         "summary" : "I-5 N and US-101 N",
-         "warnings" : [],
-         "waypoint_order" : []
-      }
-   ],
-   "status" : "OK"
-}
-```
+####    March 19 - Working through week 9 checklist
+            Expanding Experience Builder proof-of-concept
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** widgets and functionality very keyed to data sources - need to be clear on what layers are where!  
+**Outcomes:** Activated Map View, discovered Feature View widget (useful!)  
+**ToDOs:** Feature View seems to be reseting initial map in Experience Builder example - explore  
+**Time Spent:** 1 hours  
+**Resource Links:** <https://account.mapbox.com/>
 
 
-### 3. Places API (JSON Return)
+## Week 10-11
+    Working through Experience Builder to determine if we want to use it for our project or switch to StoryMaps
+    because of the difficulties and bugs we ahve encountered so far with Experience Builder.
+####    March 22 - Working through week 9 checklist
+            Create and Explore Mapbox account
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** mapbox more programming/less GUI  - versitile, useful, but needs research to execute  
+**Outcomes:** account created and some exploration  
+**ToDOs:** create and embed a map using mapbox  
+**Time Spent:** 0.5 hours  
+**Resource Links:** <https://account.mapbox.com/>  
 
-Create Get a places details URL working to return JSON: https://developers.google.com/places/web-service/details. Like the Directions API, you can include this on the same page. If not creating a webpage to run your URL, at least document it using the GitHub MD file / markdown language (https://guides.github.com/features/mastering-markdown/)
+####    March 23 - Working through week 9 checklist
+            Create and Explore Leaflet account
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** very API-ish  
+**Outcomes:** account created and some exploration  
+**ToDOs:** create and embed a map using leaflet - need more exploration of this one  
+**Time Spent:** 0.25 hours  
+**Resource Links:** <https://esri.github.io/esri-leaflet/>
 
-Get the examples working and prove your understanding of each through tweaks or documentation. For example, try the examples in the documentation, then modify the map/urls to locations that YOU KNOW to demonstrate your understanding. Bonus Big bonus if you can find and repeat/demonstrate a bug or major issue!!!  
+####    March 24 - Working through week 9 checklist
+            Research and experiment with ESRI WebAppBuilder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:**  working this after working with experience builder I see that this is maybe slightly easier, but way less customizable  
+**Outcomes:**   Created WebApp example called Test  
+**ToDOs:**       
+**Time Spent:**  0.5 hours  
+**Resource Links:** <https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=06ae26881a784cdfb79f61fa51c12216>  
 
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/placesAPIJSON.html 
+## Week 11-12
+####    March 25 - Working through week 9 checklist
+            Web Delta/Happy Puppies team meeting to discuss use of Experience Builder
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:**  there are worrisome bugs in Experience Builder, but also useful functionality, so it's a trade off.  We all found the interactivity of the widgets and data challenging to manage, and were particularly unsettled by the way the main map view keeps adjusting to selections in feature views.  When Shawn met with us, suggested to just use the Views to fix this!  
+**Outcomes:**   we are all excited to try Experience Builder, but nervous that it may be more difficult that it's worth for us  
+**ToDOs:**     Experiment with content for the remaining 2 Views in Experience Builder  
+**Time Spent:**  1 hours  
+**Resource Links:** 
 
-# Tutorials
-Complete all THREE tutorials listed. Store them in a Gmaps folder in your GitHub account. You do not need to enhance these beyond the specifications as noted. 
+####    March 26 - Experience Builder Exploration
+            After meeting with Shawn, we have decided to try more to make Experience Builder work for us  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** This tool is cumbersome and buggy, but very versitile!  
+**Outcomes:** 1) Use Different views to be able to show correct initial view of map  
+since the Feature Views widget will cause a selection to zoom the map initially regardless of  
+initial map settings.  This works great and helps me understand different ways to use the views feature.  
+2) The text for the Views menu is NOT EDITABLE in the widget properties!  Only in the page menu.  
+3) The Filter widget is amazing.  Added a View 2 for visualizing Stream Order using a series of filters  
+for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very cool!  
+**ToDOs:** create additional content for Views 1 and 2  
+**Time Spent:** 0.75 hours  
+**Resource Links:** <https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0/>  
 
-Please Use JavaScript, Not Typescript, for all activities with Google Maps. 
-What is Typescript? See https://cloud.google.com/blog/products/maps-platform/google-maps-platform-javascript-api-and-typescript
+                      
+####    March 29 - Constructing additional Views in Experience Builder
+            I have been working with a template in Experience Builder that uses 3 views,
+            and I have found that I can use the views not only to sort my data presenatation, but also to highlight thematic concepts.
+            Created stream order dynamic segmentatin map in ArcGIS Online Map Viewer from base stream map.
+            View 2 is now set to allow the user to filter the streams visible on the main map by Strahler Stream Order
+              
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** User-selected filters allow a degree of user-interactivity that can be helpful for our purposes - to be able to select streams by order.  
+**Outcomes:** 1) View 1 now has the basic map of our study area in the Rice Lake Plains along with an inset that shows stream order by dynamic segmentation.  
+2) I included our Team Logo with a link to a shell URL for our team.  
+3) View 2 now shows the Streams in our area.  There is a series of optional filters so that the user can choose to view only 1st order streams, only 1st & 2nd order, 1st, 2nd & 3rd order, or only streams above 3rd order.  
+**ToDOs:** Create content for View 3, perhaps focusing on other waterbodies and/or nature conservation?    
+**Time Spent:** 1.25 hours    
+**Resource Links:**stream order web map: <https://fleming.maps.arcgis.com/home/webmap/viewer.html?webmap=a623ec91c98440539270c9af3b80428f>
 
-Base Documentation: https://developers.google.com/maps/documentation/javascript/
+####    March 30 - Accessing SDE GDB on Virtual Server
+            Kevin Rabjohn created an Enterprise geodatabase for our collab group to use for our data handling on the Fleming virtual server, but it would not give us permission to register features as versioned.  A new GDB was constructed for us which did work fine. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** There are many layers of complexity to permissions in Enterprise!  Kevin was not able to figure out why we could not register our features classes as versioned. Talking to Rahul, it seems it may be his attempt to give us too many privileges that then ironically interfered with the privileges we needed.   
+**Outcomes:** Kevin created a new GDB for us that works correctly, with a new user code. Kristine already uploaded most of our current data.  
+**ToDOs:** Start creating individual users and user versions so we can begin to explore the data.    
+**Time Spent:** 0.5 hours    
+**Resource Links:**
 
-Be sure to understand the functions and methods you are using by looking them up in the API: https://developers.google.com/maps/documentation/javascript/reference/
+## Week 12-13
+
+####    March 31 - Meeting with other Experience Builder teams in Geom 99
+            Team Web Delta met with the other teams in Geom99 that are using Experience builder to share ideas and inspiration, challenges and difficulties.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Experience Builder can make a huge range of looks and functionality, so we need to really examine how we want to structure our project.  Some of the other teams showed prototypes using scrolling pages, beautiful graphics, other templates... a lot of it looked really good, but lacked the level of functionality of our current prototype.  
+**Outcomes:** We decided we would all try out some different templates to explore other looks.  We still want to have a shell page in github to hold our AGOL content, but want to make that content also have an essentially "stand alone page" look.    
+**ToDOs:** Create another Experience Builder prototype with a different look/template.    
+**Time Spent:** 1 hour    
+**Resource Links:**
+
+####    April 1 - Researching Stream Order Definitions
+            Since for this project Team Web Delta is doing a potential mock-up for our collab project (for Team Happy Puppies) which involves making a dynamic map of headwaters, it is important to understand the definition of headwaters and different systems for classifying and identifying headwater streams.  Toward this end, I read several papers on Headwaters, most usefully from Ontario Headwaters Institute (OHI) and Toronto and Region Conservation Authority (TRCA) - see links below.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Most sources consider headwaters to be Strahler Order 1 or 2, but some use 1,2 & 3, and there is even talk of "zero order" headwaters that are more ephemeral swales.  
+**Outcomes:** We will discuss this with our client to see if they have a specific working definition we must adopt, otherwise will go with defining headwaters as Order 1 and 2.    
+**ToDOs:** Discuss in client meeting April 7   
+**Time Spent:** 1.5 hours    
+**Resource Links:** Ontario Headwaters Institute Backgrounder: <https://ontarioheadwaters.ca/watershedmanagement/>  Toronto and Region Conservation Authority: <https://trca.ca>
+
+####    April 5 - Started new Experience Builder Prototype
+            To explore possible layouts and looks for our project I begin a second Experience Builder, this time using the "Pocket" template.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** The "pocket" template is very map-centric.  It focuses mostly on the use of bookmarks to highlight locations/objects on the map.  
+**Outcomes:** I am finally starting to understand how bookmarks work!  Also, learned that the display size settings are NOT just to "view" how it will look on different displays, but that you can set particular views to work in particular displays.    
+**ToDOs:** Flesh out this pocket template prototype and see what it can do!   
+**Time Spent:** 0.75 hours    
+**Resource Links:**
+
+####    April 6 - Meetin with Team Members to discuss strategies prior to client meeting
+            This meeting was largely to prepare for our client meeting April 7, but we also focused on the Geom99 project/dynamic map deliverable for collab.  We talked about what we have found so far with Experience Builder.  Kate is still getting the feel of Experience Builder overall, and Kristine is digging in to the actual developers side a bit.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** We will likely want to use a little of the developers functionality at some point, probably more for our actual final collab deliverable.  I am finding the widgets and templates just in their COTS form all seem to get clumsy in their interactions and settings.  I also am learning that I do NOT have the best visual design eye... It is hard for me to tell what looks good or bad on a page until it is done, so I really benefit from looking at the work of others with more design sense!  I am seeking out more Experience Builder Examples. 
+**Outcomes:** I am finally starting to understand how bookmarks work!  Also, learned that the display size settings are NOT just to "view" how it will look on different displays, but that you can set particular views to work in particular displays.    
+**ToDOs:** Keep finding new experience examples and trying other templates and options   
+**Time Spent:** 0.5 hours    
+**Resource Links:** Good example of Experience Builder with similar level of functionality to what we will want: <https://experience.arcgis.com/experience/2f68463e81294f37a68c8ef442e85b29?data_id=dataSource_3-Current_Dev_Proj_Read_Only_1586%3A34>
+
+####    April 7 - Meeting with Team Members and Collab client NCC
+            We met with our collab clients to discuss headwater definition, methodology for mapping, and specifics of deliverables, especially the dynamic map which is the focus of our geom99 project.  Demo'ed current prototype Experience Builder for clients and it really inspired them and started discussion which got us to a very different understanding of what they really want!  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** We had been operating under the premise that our collab clients' primary interest was in a static map of headwaters, but after demo'ing the Experience Builder they really got excited and as we questioned and dicussed further we realize they intend for the dynamic map to really be the main functional deliverable, and the static map is more of a display piece.  So this puts more importance on our geom99 work!
+**Outcomes:** Client loved the look of the dark basemap with streams showing in different colors by stream order for the static map as a large "poster".  They are also interested in the idea of making streams "clickable" to highlight their downstream progeny, and also filterable by water quality data.   
+**ToDOs:** Find Cold Water data, get Scoop2018 tiles from Tessa, explore further filtering options in Experience Builder   
+**Time Spent:** 1 hours    
+**Resource Links:** Possible source for water quality data: <https://data.ontario.ca/dataset/provincial-stream-water-quality-monitoring-network>
 
 
+## Week 13-14
 
-# Create Tutorial 1: 
-https://developers.google.com/maps/documentation/javascript/adding-a-google-map
-Complete this tutorial using the provided key (AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE)--you do not need to do Step 3. Store your solution in your personal public GitHub account under a Gmaps folder. Modify the solution so the "Marker" is at the location of your last degree or diploma. Name it tutorial1.html.
+####    April 7 - Explore settings for Lists in Experience Builder in new jewlreybox template
+            Deep dive into the list widget and text widget within the list - worked on filtering data and creating new data views from filtered data. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Created custom data view to filter out only named headwaters greater than 750 meters.  Discovered how to set dynamic text to label list items from data source field - gives 3 options: auto-populate, Selected Features, data source - MUST use data source for it to be truly dynamic!  other options populate entire list with the value of selected field in first feature. 
+**Outcomes:** Created a list that is ONLY named streams order 1 or 2 and longer than 750 meters with each item in the list labelled by name and stream order with alternate style for selected list item.   
+**ToDOs:** incoporate this functionality in a more cohesive template   
+**Time Spent:** 1.75 hours    
+**Resource Links:** <https://experience.arcgis.com/experience/097faec5dc794430aab68a8404bf4275>
 
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial1.html 
+####    April 8 - Team meeting going over Experience Builder prototypes
+            Showed my team what I learned about filtering lists and dynamic text.  Team members had designed experiences that have a more cohesive website-ish look.  These are good for this Geom99 project!  We decided I should continue to focus on learning functionality and they will continue to work on design and look.  Began working on another experience sample to explore using bookmarks to switch between map layer views.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** I'm still having trouble using bookmarks!  It seems that they are for zooming, seelcting, highlighting and annotating map sections (or other content) but not for switching to different data.
+**Outcomes:** Still looking for the best way to have user-controlled switching between map content (stream orders) that looks consistent and is easy to use.   
+**ToDOs:** Work more with views or multiple maps.   
+**Time Spent:** 0.5 hours    
+**Resource Links:**
 
+####    April 9 - Team meeting w/Shawn and follow-up work with Hub
+            Going over our status in class, Shawn suggested we look into using Hub instead of HTML on Github for holding our content for this project.  We all liked the idea of it and the look, so began playing around with Hub layouts.  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Hub is basically a flexible template that easily constructs a website-ish look from content that includes ESRI-generated and housed content (AGOL stuff).  Seems simpler to use than Experience builder, but less functionality, just easier design.
+**Outcomes:** We all felt that Hub was worth pursuing as the overall container for our Geom99 project, though it will not be used for our Collab project deliverable since they are looking strictly for functionality and so Hub would not add to that, just create another layer for the user to work through.  We all begain exploring Hub designs.   
+**ToDOs:** Start integrating some of the Experience pieces into Hub.   
+**Time Spent:** 1 hours    
+**Resource Links:**
 
-# Create Tutorial 2: 
-https://developers.google.com/maps/documentation/javascript/marker-clustering 
-Complete this tutorial and host it in your GitHub account. Use the Provincial Parks of Ontario (List of Ontario Provincial Parks) as the locations. Name it tutorial2.html
+####    April 12 - Created multiple web maps to consume in Experience Builder or Hub
+            To give me more options for displaying different data in different way, I created multiple separate web maps with just certain categories of stream order, publishing them to AGOL from Pro. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Because Hub lacks some of the functionality of Experience Builder, we can make up for that by doing more data preprocessing in Pro and just having more individual resources in AGOL to drawn from.
+**Outcomes:** Created a menu in Hub to view stream order maps by stream order.  I did not get at all a complete Hub built, and then there was a problem with the account/access-token, and it would not save, so have to redo it, but at least figured out a way to display the content I want.   
+**ToDOs:** In lab this week the team will all work on combining our various pieces in a cohesive Hub.   
+**Time Spent:** 1.25 hours    
+**Resource Links:** no link since there was a problem and could not save.
 
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/Tutorial2_markerclusters.html 
+####    April 13 - Team Meeting with Advisor
+            Team met briefly with Paige and filled her in on the developments from our client meeting previous week.  She was suprised to hear the direction the client's interest has taken, as she too thought they were mostly interested in the static map, so agrees with the emphasis for Collab being more on the dynamic app.  We discussed concerns about functionality of clickable streams that select downstream segments, but since this can be accomplished with filters in Experience Builder, I am confident we can find a way to make it more "point-and-click". 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** I might need to learn how to modify the widget geojson code in the jimu-library.
+**Outcomes:** Began modifying some old hydro data to use for test case, since our current stream data does not contain "Nextdown_ID" info.   
+**ToDOs:** Watch more Experience Builder for Developers demos and tutorials for modifying widget code, bring Nextdown_Id data into Experience.   
+**Time Spent:** 0.5 hours    
+**Resource Links:**
 
-# Create Tutorial 3: 
-https://developers.google.com/maps/documentation/javascript/earthquakes
-Complete this tutorial and host it in your GitHub account. Keep each step and host them in your GitHub account as Create tutorial3a.html (points), Createtutorial3b.html (circles) and Create tutorial3c.html (heatmap). 
+## Week 14-15
 
-Bonus Interested in a different maps api tutorial? Get pre-approval and you can complete that in place of one or all of the three above!
-
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3a.html 
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3b.html 
-#### My html page containing this API call is: https://jserendip.github.io/Geom99/Gmaps/tutorial3c.html 
-
-# Option 2:
-Create a webpage to tell a story using MyMaps and/or Google Embedded Maps
-
-    Create and publish a MyMaps to showcase a location of interest to you using one or more spatial layers using multiple records (a single point or line is not appropriate and does not meet the requirements). 
-    Use the Embedded Maps, StreetView, Places or and other Embedded map to add to the context of your story: https://developers.google.com/maps/documentation/embed/get-started
-
-Note: For Option 2 your "story" must contain no fewer than 3 maps on the single page and tell a story in the HTML document effectively to tie all maps together. 
-
-My Story Map for Option 2 is of the "Line of Saint Michael" in Europe:  https://jserendip.github.io/Geom99/Gmaps/stmichaelsline.html
 
