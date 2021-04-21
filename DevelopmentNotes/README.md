@@ -221,5 +221,74 @@ for the user to select streams of order 1, 1&2, 1&2&3, or greater than3.  Very c
 **Resource Links:**
 
 ## Week 14-15
+####    April 14 - Load Ganaraska Region data from earlier assignment to AGOL
+            Opened old Env. Modelling Assignment that had drainage Line data in ArcGIS Pro, made a map with just this basic data and shared to AGOL account. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** We must go all the way through the drainage line function in Arc Hyrdo to get NextDown data, also , realized previous in-between stage web maps were made in classic viewer which is about to depricate, so made sure this one is in the New "used-to-be-beta" version of map viewer.
+**Outcomes:** Got the web map avaible to consume in Experience Builder.
+**ToDOs:** Construct an experience that filters by NextDownIDs.  
+**Time Spent:** 0.25 hours    
+**Resource Links:**<https://fleming.maps.arcgis.com/apps/mapviewer/index.html?webmap=fcd4142fad9646e6a42d4c628baa330f>
 
+####    April 14 - Create 3rd view in Experience w/Ganaraska Map
+Populated the 3rd view in my current test experience with the new WebMap of Ganaraska area stream as drainage lines and used a query widget to provide associated info.  User can click on a stream segment and the pop-up shows the NextDownID which can then be entered in the query to select and zoon to the next downstream segment.  Exploring the SQL options for the query tool. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** The ability to apply SQL to map data brings a level of functionality that could be very well suited to our project.  One different problem with this approach is that the new view does not mean I can use a new MAP… by changing the map in one view, it changes it for all views... to do this as I am trying to would need different pages, not different views.
+**Outcomes:** Got Ganaraska map and query tool working, but it messes up the rest of the experience structure.   
+**ToDOs:** Make a stand-alone experience to explore just this map and query concept.   
+**Time Spent:** 1.25 hours   
+**Resource Links:**<https://experience.arcgis.com/experience/faa94141a36048dcbcb9bac5b83db5b0>
 
+####    April 15 - Create 2 new Experiences for Hub
+            Experience with just the Stream Order Map with filters to show streams by order, and the other with a Query of Ganaraska streams by NextDownID/HydroID  
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Exploring the SQL filtering options for the Query tool it seems it might be able to select down-line stream connectivity, but will be tricky!  Might require custom widget creation.
+**Outcomes:** created the two experiences  
+**ToDOs:** Install Experience Builder Developers platform to explore widget creation   
+**Time Spent:** 1.0 hours
+**Resource Links:** <https://experience.arcgis.com/experience/d57743bf345848fe84b450692ba0dcf7>    and   <https://experience.arcgis.com/experience/d4e79d7925de4b059679390b2798dae3> 
+
+####    April 15 - Install Experience Builder Developers tools
+            Install node.js, download and install Experience Builder package, activate settings for server and client in Command line, start running both on command line (npm start), then set localhost:3001 as redirect URI on Developers account, and go to localhost:3001 to access account. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** client and server must be started at command prompt every time!
+**Outcomes:** Access to Developers edition
+**ToDOs:** Start working through tutorials on custom widget creation   
+**Time Spent:** 1.5 hours    
+**Resource Links:**
+
+####    April 16 - Team Meeting w/Shawn - Finalizing GitHub page to record our process
+            Load text content and images to GitHub page that holds our story of this development process
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Shawn pointed out that what I have been trying to figure a way to do with widgets in Experience Builder I can actually set up on the back end instead by manipulating the data in Pro and sending different data layers to be used in the App!  So I do not need to put as much focus on configuring custom widgets!
+**Outcomes:** Stopped working on Developer install for now and focused on finalizing GitHub shell content for Geom 99 deliverable  
+**ToDOs:** Need more content for the "development story" aspect of github shell   
+**Time Spent:** 1 hours    
+**Resource Links:**<https://kluangkhflemingc.github.io/nccweb/index.html>
+
+####    April 16 - Explore Possibilities in App Builder
+            Since I had not yet tried using App Builder, I want to construct a web app in this platform.  Made a new web app in App Builder, looked at launch pad theme and billboard theme, loaded stream order web map. 
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** App Builder is less customizable than Experience Builder, but therefore a little easier/faster to set up and has interesting widgets, like swipe and time slider and stream!
+**Outcomes:** Did not get too far into the app this round, just had the shell with the web map.
+**ToDOs:** Build a coherent App exploring the "stream" widget and maybe slider  
+**Time Spent:** 0.5 hours    
+**Resource Links:**<https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=84102c2efe504afc8a12b37d9d3eea39>
+
+####    April 19 - Try other App Builder Widgets
+            Set up measurement widget, filter widget and select widget in App Builder.
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Higher-function widgets are no easier in this than in Experience Builder - maybe harder because some edits need to be made to the data to make it work with specific parameters.  Measurement widget is easy and useful!  May include in final collab deliverable!  Filter widget seems complicated - hard to set.  The select widget is great, except not sure yet what I can do with what has been selected.
+**Outcomes:** Updated AppBuilderTEst to include these widgets with filter (and the older streams widget) not really functioning yet because I need to tweak the way the layers are set for them to do anything.
+**ToDOs:** Talk to team and see if this is worth pursuing.  
+**Time Spent:** 0.5 hours    
+**Resource Links:**<https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=84102c2efe504afc8a12b37d9d3eea39>
+
+####    April 20 - Team Meeting w/Advisor
+            Discussed direction web app solutions for collab are going relative to what we are doing for Geom99
+##### Insights, Outcomes, ToDos, Time Spent and Resource Links
+**Insights:** Paige is pleased with our progress and feels the app builder widgets are worth exploring.
+**Outcomes:** team divided up some additional hub and github content to be filled in by members
+**ToDOs:** Complete my content on GitHub   
+**Time Spent:** 0.5 hours    
+**Resource Links:**
