@@ -29,6 +29,6 @@ jobs:
       - name: Update files on GitHub
         uses: test-room-7/action-update-file@v1.5.0
         with:
-                  file-path: path/to/file
+                  file-path: \Geom99\Gmaps\TestingActions.html
                   commit-msg: Update resources
                   github-token: ${{ secrets.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 }}
