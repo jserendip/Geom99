@@ -31,4 +31,4 @@ jobs:
         with:
                   file-path: path/to/file
                   commit-msg: Update resources
-                  github-token: ${{ secrets.GITHUB_TOKEN }}
+                  github-token: ${{ secrets.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 }}
